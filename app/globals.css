@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  scroll-behavior: smooth;
+}
+
+:root {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100%;
+  --color-primary: #151F4F;
+}
+
+.btn {
+  @apply rounded-custom;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
