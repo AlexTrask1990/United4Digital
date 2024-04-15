@@ -165,7 +165,7 @@ export default function Form() {
           render={({ field: { onChange, value }, fieldState: { error } }) => (
             <ReCAPTCHA
               ref={recaptchaRef}
-              sitekey={process.env.NEXT_PUBLIC_SITE_KEY || "6Ld7w7cpAAAAACBndYDBCLBvpjbwE7uhocLOeY6t"}
+              sitekey="6LdKd7spAAAAAGjl-8ef8p4wx4rjh4rJ3TWzgLj_"
               onChange={onChange}
               className="pt-8"
             />

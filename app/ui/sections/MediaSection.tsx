@@ -35,6 +35,7 @@ export default function MediaSection() {
                 src="/your-adv.gif"
                 width={0}
                 height={0}
+                unoptimized={true}
                 alt="Customized programmatic media buying to effectively position your ads for optimal user acquisition, leveraging deep expertise and strategic relationships."
                 className="w-auto h-auto"
               />
