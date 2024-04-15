@@ -18,6 +18,7 @@ export default function Form() {
   const [isLoading, setIsLoading] = useState<boolean>(false);
   const [success, setSuccess] = useState<boolean>(false);
   const recaptchaRef = useRef<ReCAPTCHA>(null);
+  console.log(process.env.NEXT_PUBLIC_SITE_KEY, "process.env.NEXT_PUBLIC_SITE_KEY")
   const {
     register,
     handleSubmit,
