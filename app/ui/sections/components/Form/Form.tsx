@@ -18,7 +18,6 @@ export default function Form() {
   const [isLoading, setIsLoading] = useState<boolean>(false);
   const [success, setSuccess] = useState<boolean>(false);
   const recaptchaRef = useRef<ReCAPTCHA>(null);
-  console.log(process.env.NEXT_PUBLIC_SITE_KEY, "process.env.NEXT_PUBLIC_SITE_KEY")
   const {
     register,
     handleSubmit,
@@ -166,7 +165,7 @@ export default function Form() {
           render={({ field: { onChange, value }, fieldState: { error } }) => (
             <ReCAPTCHA
               ref={recaptchaRef}
-              sitekey={process.env.NEXT_PUBLIC_SITE_KEY || "6LdKd7spAAAAAGjl-8ef8p4wx4rjh4rJ3TWzgLj_"}
+              sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY || ""}
               onChange={onChange}
               className="pt-8"
             />
