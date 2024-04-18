@@ -3,8 +3,6 @@ import { openSans } from "@/app/ui/fonts";
 import { GoogleAnalytics, GoogleTagManager } from "@next/third-parties/google";
 import "./globals.css";
 
-import CookiesConsent from "./ui/CookieConsent/CookieConsent";
-
 export const metadata: Metadata = {
   title: {
     default: "United4Digital",
@@ -29,7 +27,6 @@ export default function RootLayout({
       <body
         className={`${openSans.variable} flex flex-col min-h-screen antialiased`}
       >
-        <CookiesConsent />
         {children}
       </body>
     </html>
