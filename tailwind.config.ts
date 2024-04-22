@@ -40,6 +40,8 @@ const config: Config = {
 
         desktop: "1280px",
         // => @media (min-width: 1280px) { ... }
+        widescreen: '1444px',
+        // => @media (min-width: 1400px)
       },
       borderRadius: {
         custom: "2.78px",
