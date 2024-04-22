@@ -59,11 +59,10 @@ export const DropdownMenu: FC = () => {
               </Link>
             );
           })}
-          <div className="flex justify-center">
+          <div className="flex justify-center" onClick={localCloseMenu}>
             <Button
               label="Contact us"
               className="w-[141px] order-2 tablet:order-1 btn-secondary"
-              onClick={localCloseMenu}
             />
           </div>
         </ul>
