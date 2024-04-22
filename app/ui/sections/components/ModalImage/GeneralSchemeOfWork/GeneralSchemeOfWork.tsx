@@ -13,7 +13,7 @@ export default function GeneralSchemeOfWork() {
   return (
     <>
       <div className="flex flex-col items-center pt-24">
-        <h3 className="text-3xl font-bold text-center text-primary pb-16">
+        <h3 className="text-3xl font-bold text-center text-primary pt-14 laptop:pt-0 laptop:pb-16 order-2 laptop:order-1">
           General scheme of work
         </h3>
         <Image
@@ -21,7 +21,7 @@ export default function GeneralSchemeOfWork() {
           src="/buy-sell.svg"
           width={1402}
           height={490}
-          className="w-auto h-auto cursor-zoom-in"
+          className="w-auto h-auto cursor-zoom-in order-1 laptop:order-2"
           onClick={handleClick}
         />
       </div>
