@@ -21,7 +21,7 @@ export default function PublishersSection() {
               <MonetizationGraph />
             </div>
 
-            <div className="text-primary max-w-[500px] pt-28 laptop:pt-0 order-1 laptop:order-2 pb-8 laptop:pb-0 laptop:mr-[50px]">
+            <div className="text-primary max-w-[500px] pt-14 laptop:pt-0 order-1 laptop:order-2 pb-8 laptop:pb-0 laptop:mr-[50px]">
               <h3 className="text-3xl font-bold">
                 What is the process of ad monetization?
               </h3>

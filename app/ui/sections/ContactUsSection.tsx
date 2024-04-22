@@ -12,7 +12,7 @@ export default function ContactUsSection() {
           <SectionHeading text={"Contact us"} />
         </Container>
         <Container>
-          <div className="flex flex-col items-center desktop:items-start pt-28 laptop:pt-0 desktop:flex-row justify-between">
+          <div className="flex flex-col items-center desktop:items-start pt-14 laptop:pt-0 desktop:flex-row justify-between">
             <Form />
             <div className="pt-4 laptop:pt-0 tablet:ml-4">
               <ContactUsLottie />

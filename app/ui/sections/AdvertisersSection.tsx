@@ -44,7 +44,7 @@ export default function AdvertisersSection() {
           <SectionHeading text={"Advertisers"} />
         </Container>
         <Container>
-          <div className="flex flex-col justify-between pt-28 laptop:pt-0 items-center laptop:flex-row">
+          <div className="flex flex-col justify-between pt-14 laptop:pt-0 items-center laptop:flex-row">
             <div className="order-1 text-justify text-primary text-lg max-w-[500px] pb-8 laptop:pb-0 laptop:pr-4">
               <p>
                 No matter if you&apos;re a brand or an agency, rest assured that

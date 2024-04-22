@@ -14,7 +14,7 @@ export default function MediaSection() {
           <SectionHeading text={"Media Buying & User Acquisition"} />
         </Container>
         <Container>
-          <div className="flex flex-col laptop:flex-row pt-28 laptop:pt-0 items-center laptop:justify-between">
+          <div className="flex flex-col laptop:flex-row pt-14 laptop:pt-0 items-center laptop:justify-between">
             <div className="text-primary max-w-[500px] pb-8 laptop:pb-0 laptop:mr-4">
               <p className="text-lg pb-7">
                 In the realm of online media buying and user acquisition,
