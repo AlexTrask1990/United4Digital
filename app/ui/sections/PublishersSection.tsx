@@ -81,17 +81,17 @@ export default function PublishersSection() {
           </div>
 
           <div className="flex laptop:justify-end items-center flex-col laptop:flex-row-reverse pt-28">
-            <div className="order-1 laptop:order-2 max-w-[730px] max-h-[460px]">
+            <div className="order-2 max-w-[730px] max-h-[460px]">
               <PublishersLottie />
             </div>
 
-            <div className="order-2 laptop:order-1 text-primary max-w-[500px] laptop:ml-[137px] px-8">
+            <div className="order-1 text-primary max-w-[500px] laptop:ml-[137px] px-8">
               <p className="text-lg pt-9 laptop:pt-0">
                 Ready to monetize your website or platform with lucrative ad
                 space? Let&apos;s maximize your revenue potential together.
                 Reach out to us now!
               </p>
-              <div className="pt-8">
+              <div className="pt-8 pb-14 laptop:pb-0">
                 <Button
                   label="Contact us"
                   className="laptop:px-14 w-full laptop:w-auto btn-secondary"
