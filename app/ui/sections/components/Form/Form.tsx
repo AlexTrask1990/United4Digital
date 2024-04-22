@@ -51,7 +51,7 @@ export default function Form() {
   };
 
   return (
-    <div className="relative w-full bg-white rounded-md p-4 laptop:p-12 max-w-[792px]">
+    <div className="relative w-full bg-white rounded-md p-4 laptop:p-12 max-w-[792px] order-2 laptop:order-1">
       <form onSubmit={handleSubmit(onSubmit)}>
         <div className="laptop:flex laptop:justify-between">
           {/* *** First Name *** */}
