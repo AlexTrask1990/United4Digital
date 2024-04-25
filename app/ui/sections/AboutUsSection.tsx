@@ -46,7 +46,7 @@ export default function AboutUsSection() {
         </Container>
         <Container>
           <div className="flex flex-col laptop:flex-row items-center laptop:justify-between">
-            <div className="text-primary text-justify max-w-[500px] pb-8 pt-14 laptop:pt-0 laptop:pb-0 laptop:mr-4">
+            <div className="text-primary max-w-[500px] pb-8 pt-14 laptop:pt-0 laptop:pb-0 laptop:mr-4">
               <h3 className="text-3xl font-bold pb-8">
                 The company&apos;s mission
               </h3>
