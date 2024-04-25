@@ -14,6 +14,7 @@ const config: Config = {
           50: "#404970",
           100: "#E8E9ED",
         },
+        'gray-transparent-60': 'rgba(222, 222, 222, 0.8)',
       },
       fontSize: {
         "heading-xl": "2.5rem",
