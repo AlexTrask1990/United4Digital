@@ -30,6 +30,7 @@ export default function NotFound() {
             Oops! The page you&apos;re looking for couldn&apos;t be found.
           </p>
           <Link
+            aria-label="Home page link"
             href="/"
             className="mt-4 inline-block text-2xl laptop:text-3xl font-bold text-secondary"
           >

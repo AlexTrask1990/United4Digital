@@ -8,6 +8,7 @@ interface IProps {
 export const LinkedIn: FC<IProps> = ({ fill = "white", className = "hover:bg-gray-50" }) => {
   return (
     <Link
+      aria-label="LinkedIn link"
       href="https://www.linkedin.com/in/iryna-omelnytska-1152242bb/recent-activity/all/"
       className={`p-2 rounded-full transition-colors ${className}`}
     >

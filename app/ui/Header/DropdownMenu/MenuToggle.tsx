@@ -25,7 +25,7 @@ interface IProps {
 }
 
 export const MenuToggle: FC<IProps> = ({ toggle }) => (
-  <button onClick={toggle}>
+  <button onClick={toggle} aria-label="Toggle menu button">
     <svg
       width="34"
       height="34"

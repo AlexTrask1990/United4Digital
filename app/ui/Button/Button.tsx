@@ -29,6 +29,7 @@ export const Button: FC<IProps> = ({
     <button
       type={type}
       onClick={handleClick}
+      aria-label="contact us button"
       className={`btn text-base-100 leading-4 font-bold ${className}`}
       {...props}
     >

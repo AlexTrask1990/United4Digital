@@ -25,15 +25,15 @@ export const NavLinks: FC = () => {
   );
   return (
     <div className="hidden laptop:flex w-[796px]">
-      <ul className="navbar-end text-base-100 w-full hidden laptop:flex laptop:justify-start">
+      <div className="navbar-end text-base-100 w-full hidden laptop:flex laptop:justify-start">
         {_.map(links, (link) => {
           return (
-            <Link key={link.name} href={`${link.href}`} className={`flex items-center justify-start ${link.name === "Glossary" && "justify-center"} w-[130px]`}>
-              <li className="hover:text-white hover:font-bold text-base">{link.name}</li>
+            <Link key={link.name} aria-label={`${link.name} link`} href={`${link.href}`} className={`flex items-center justify-start ${link.name === "Glossary" && "justify-center"} w-[130px]`}>
+              <span className="hover:text-white hover:font-bold text-base">{link.name}</span>
             </Link>
           );
         })}
-      </ul>
+      </div>
       <Button label="Contact us" className="px-5 btn-secondary" icon={arrow} />
     </div>
   );

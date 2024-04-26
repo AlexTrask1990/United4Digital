@@ -21,12 +21,14 @@ export default function Footer() {
           <nav className="flex flex-col tablet:flex-row px-4 py-[20px] tablet:py-0 justify-between text-base max-w-[499px] tablet:h-[60px]">
             <div className="flex flex-col justify-between">
               <Link
+                aria-label="About us link"
                 href={`/#about-us`}
                 className="hover:font-bold tablet:w-[90px]"
               >
                 About us
               </Link>
               <Link
+                aria-label="Publishers link"
                 href={`/#publishers`}
                 className="hover:font-bold tablet:w-[90px]"
               >
@@ -35,6 +37,7 @@ export default function Footer() {
             </div>
             <div className="tablet:max-w-[120px] max-w-max">
               <Link
+                aria-label="Media buying and user acquisition link"
                 href={`/#media-buying-and-user-acquisition`}
                 className="flex flex-row tablet:flex-col tablet:justify-between tablet:h-[60px] hover:font-bold tablet:w-[130px]"
               >
@@ -44,12 +47,14 @@ export default function Footer() {
             </div>
             <div className="flex flex-col justify-between">
               <Link
+                aria-label="Advertisers link"
                 href={`/#advertisers`}
                 className="hover:font-bold tablet:w-[90px]"
               >
                 Advertisers
               </Link>
               <Link
+                aria-label="Glossary link"
                 href={`/glossary`}
                 className="hover:font-bold tablet:w-[90px]"
               >
@@ -79,18 +84,21 @@ export default function Footer() {
           </nav>
           <nav className="text-base flex flex-col laptop:flex-row justify-between pt-5 laptop:pt-0 laptop:items-center">
             <Link
+              aria-label="Cookie policy link"
               href={`/cookie-policy`}
               className="hover:font-bold laptop:text-center w-[120px]"
             >
               Cookie Policy
             </Link>
             <Link
+              aria-label="Terms link"
               href={`/terms`}
               className="hover:font-bold laptop:text-center w-[120px]"
             >
               Terms
             </Link>
             <Link
+              aria-label="Privacy policy link"
               href={`/privacy-policy`}
               className="hover:font-bold w-[120px] laptop:text-center"
             >

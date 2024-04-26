@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Logo() {
   return (
-    <Link href="/">
+    <Link href="/" aria-label="Logo, home page link">
       <Image
         src="/logo.svg"
         width={0}

@@ -239,6 +239,7 @@ export default function CookiePolicy() {
               <BoldText>Link disclosure / Instructions on opt-out: </BoldText>
               <NormalText>
                 <Link
+                  aria-label="Google Analytics link"
                   href="https://support.google.com/analytics/answer/4597324?hl=en"
                   className="text-sky-500 underline"
                 >
@@ -246,6 +247,7 @@ export default function CookiePolicy() {
                 </Link>
                 ,{" "}
                 <Link
+                  aria-label="Google Analytics Partner sites link"
                   href="https://policies.google.com/technologies/partner-sites?hl=en"
                   className="text-sky-500 underline"
                 >
@@ -269,6 +271,7 @@ export default function CookiePolicy() {
               </BoldText>
               <NormalText>
                 <Link
+                  aria-label="Facebook Privacy Explanation link"
                   href="https://www.facebook.com/privacy/policy/?entry_point=data_policy_redirect&entry=0"
                   className="text-sky-500 underline"
                 >
@@ -372,6 +375,7 @@ export default function CookiePolicy() {
               <BoldText>Link to the policy: </BoldText>
               <NormalText>
                 <Link
+                  aria-label="Facebook - your online choices link"
                   href="https://www.youronlinechoices.com/uk/"
                   className="text-sky-500 underline"
                 >
@@ -390,6 +394,7 @@ export default function CookiePolicy() {
             <BoldText>Informative links: </BoldText>
             <NormalText>
               <Link
+                aria-label="LinkedIn cookie policy link"
                 href="https://ru.linkedin.com/legal/cookie-policy?"
                 className="text-sky-500 underline"
               >
@@ -419,6 +424,7 @@ export default function CookiePolicy() {
           <NormalText>
             Explorer:{" "}
             <Link
+              aria-label="Manage cookies in microsoft edge link"
               href="https://support.microsoft.com/en-gb/windows/delete-and-manage-cookies-168dab11-0753-043d-7c16-ede5947fc64d"
               className="text-sky-500 underline"
             >
@@ -430,6 +436,7 @@ export default function CookiePolicy() {
           <NormalText>
             Chrome:{" "}
             <Link
+              aria-label="Manage cookies in google chrome link"
               href="https://support.google.com/chrome/answer/95647?hl=en"
               className="text-sky-500 underline"
             >
@@ -441,6 +448,7 @@ export default function CookiePolicy() {
           <NormalText>
             Firefox:{" "}
             <Link
+              aria-label="Manage cookies in mozilla firefox link"
               href="https://support.mozilla.org/en-US/kb/enhanced-tracking-protection-firefox-desktop?redirectslug=enable-and-disable-cookies-website-preferences&redirectlocale=en-US"
               className="text-sky-500 underline"
             >
@@ -452,6 +460,7 @@ export default function CookiePolicy() {
           <NormalText>
             Safari:{" "}
             <Link
+              aria-label="Manage cookies in safari link"
               href="https://support.apple.com/en-gb/guide/safari/sfri11471/mac"
               className="text-sky-500 underline"
             >
@@ -463,6 +472,7 @@ export default function CookiePolicy() {
           <NormalText>
             Opera:{" "}
             <Link
+              aria-label="Manage cookies in Opera link"
               href="https://help.opera.com/en/latest/web-preferences/"
               className="text-sky-500 underline"
             >
@@ -474,6 +484,7 @@ export default function CookiePolicy() {
           <NormalText>
             Edge:{" "}
             <Link
+              aria-label="Manage cookies in Microsoft Edge link"
               href="https://support.microsoft.com/en-us/windows/microsoft-edge-browsing-data-and-privacy-bb8174ba-9d73-dcf2-9b4a-c582b4e640dd"
               className="text-sky-500 underline"
             >

@@ -16,9 +16,9 @@ export default function Terms() {
         <NormalText>
           These terms and conditions outline the rules and regulations for the
           use of United4Digital Website, located at{"  "}
-          <Link href="https://united4digital.com/" className=" underline">
+          <Link href="https://united4digital.com/" className=" underline" aria-label="home page">
             https://united4digital.com
-          </Link>
+          </Link>s
         </NormalText>
       </Paragraph>
       <Paragraph className="pt-4">
