@@ -4,6 +4,7 @@ import Lottie from "react-lottie";
 import { useState, useEffect } from "react";
 import animationData from "@/public/logoU4D.json";
 
+
 const defaultOptions = {
   loop: true,
   autoplay: true,
