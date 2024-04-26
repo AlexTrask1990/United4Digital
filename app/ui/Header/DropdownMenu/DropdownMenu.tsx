@@ -51,11 +51,11 @@ export const DropdownMenu: FC = () => {
         animate={isOpen ? "open" : "closed"}
         variants={dropdownVariants}
       >
-        <ul className="flex flex-col py-4 px-14 border-t-4 border-t-primary w-4/5 rounded-b-md bg-base-100">
+        <div className="flex flex-col items-center py-4 px-14 border-t-4 border-t-primary w-4/5 rounded-b-md bg-base-100">
           {_.map(links, (link) => {
             return (
               <Link key={link.name} href={`${link.href}`} onClick={localCloseMenu} aria-label={`${link.name} link`}>
-                <li className="py-4 text-center text-2xl leading-6">{link.name}</li>
+                <p className="py-4 text-center text-2xl leading-6">{link.name}</p>
               </Link>
             );
           })}
@@ -65,7 +65,7 @@ export const DropdownMenu: FC = () => {
               className="w-[141px] order-2 tablet:order-1 btn-secondary"
             />
           </div>
-        </ul>
+        </div>
       </motion.div>
       <MenuToggle toggle={() => toggleOpen()} />
     </motion.nav>

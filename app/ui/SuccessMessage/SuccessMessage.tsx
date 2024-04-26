@@ -21,7 +21,7 @@ export default function SuccessMessage({ message, success, onClose }: IProps) {
 
   useEffect(() => {
     if (isFadingOut) {
-      const timerId = setTimeout(() => onClose(false), 200); // Длительность исчезновения
+      const timerId = setTimeout(() => onClose(false), 200);
       return () => clearTimeout(timerId);
     }
   }, [isFadingOut, onClose]);
