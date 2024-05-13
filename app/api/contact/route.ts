@@ -17,7 +17,7 @@ export async function POST(req: Request) {
   const firstName = _.get(data, "firstName", "Jane");
   const lastName = _.get(data, "lastName", "Doe");
   const email = _.get(data, "email", "jane@gmail.com");
-  const phoneNumber = _.get(data, "phoneNumber", "+3 333 333 33 33");
+  const phoneNumber = _.get(data, "phoneNumber", "");
   const company = _.get(data, "company", "Some company");
   const subject = _.get(data, "subject", "Some subject");
   const message = _.get(data, "message", "Some message");

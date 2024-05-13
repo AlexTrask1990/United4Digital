@@ -28,6 +28,7 @@ export default function Form() {
     resolver: yupResolver(schema),
   });
   const onSubmit: SubmitHandler<IFormData> = async (data) => {
+    console.log(data, "data");
     setIsLoading(true);
     const response = await sendMail(data);
     if (response.ok) {
@@ -40,7 +41,7 @@ export default function Form() {
         phoneNumber: "",
         company: "",
         subject: "",
-        recaptcha: "",
+        // recaptcha: "",
         message: "",
       });
       recaptchaRef.current?.reset();
@@ -114,15 +115,22 @@ export default function Form() {
             <div className="label">
               <span className="font-medium">Phone Number</span>
             </div>
-            <PhoneInputWithCountry
-              name={CFormKeys.PHONE_NUMBER}
-              defaultCountry="GB"
-              international
-              countryCallingCodeEditable={false}
+            <Controller
               control={control}
-              rules={{ required: true }}
-              withCountryCallingCode={true}
-              className="input rounded-md w-full"
+              name={CFormKeys.PHONE_NUMBER}
+              rules={{ required: false }}
+              render={({ field }) => (
+                <PhoneInputWithCountry
+                  name={CFormKeys.PHONE_NUMBER}
+                  defaultCountry="GB"
+                  international
+                  countryCallingCodeEditable={false}
+                  control={control}
+                  rules={{ required: false }}
+                  withCountryCallingCode={true}
+                  className="input rounded-md w-full"
+                />
+              )}
             />
           </label>
         </div>
@@ -176,7 +184,11 @@ export default function Form() {
         )}
 
         <div className="flex justify-between pt-8">
-          <Button label={"Submit"} type={"submit"} className="w-[170px] btn-secondary" />
+          <Button
+            label={"Submit"}
+            type={"submit"}
+            className="w-[170px] btn-secondary"
+          />
           <div className="flex items-center">
             <LinkedIn
               fill={"var(--color-primary)"}
