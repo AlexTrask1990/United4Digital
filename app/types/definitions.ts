@@ -44,3 +44,14 @@ export interface IOfferList {
   [CommonFields.ALT]: string;
   [CommonFields.TEXT]: string;
 }
+
+export type Glossary = {
+  slug: string;
+  title: string;
+  coverImage: string;
+  ogImage: {
+    url: string;
+  };
+  content: string;
+  preview?: boolean;
+};

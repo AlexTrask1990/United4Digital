@@ -13,6 +13,7 @@
     "@next/third-parties": "^14.1.4",
     "cookies-next": "^4.1.1",
     "framer-motion": "^11.0.18",
+    "gray-matter": "^4.0.3",
     "next": "^14.1.4",
     "nodemailer": "^6.9.13",
     "react": "^18",
@@ -21,6 +22,8 @@
     "react-hook-form": "^7.51.1",
     "react-lottie": "^1.2.4",
     "react-phone-number-input": "^3.3.9",
+    "remark": "^15.0.1",
+    "remark-html": "^16.0.1",
     "yup": "^1.4.0"
   },
   "devDependencies": {
