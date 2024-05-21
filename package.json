@@ -24,6 +24,7 @@
     "react-phone-number-input": "^3.3.9",
     "remark": "^15.0.1",
     "remark-html": "^16.0.1",
+    "swr": "^2.2.5",
     "yup": "^1.4.0"
   },
   "devDependencies": {
