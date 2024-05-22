@@ -13,7 +13,7 @@ export const getGlossarySlugs = () => {
 };
 
 export const getGlossaryBySlug = (slug: string) => {
-  const realSlug = slug.replace(/\.md$/, "");
+  const realSlug = slug?.replace(/\.md$/, "");
   const fullPath = join(glossaryDirectory, `${realSlug}.md`);
   const fileContents = fs.readFileSync(fullPath, "utf8");
   const { data, content } = matter(fileContents);
