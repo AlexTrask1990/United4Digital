@@ -28,7 +28,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="bf1218b1-b997-4221-94b8-3147efd1b6f5" data-blockingmode="auto" type="text/javascript"></script>
+      {/* <head>
+              <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="bf1218b1-b997-4221-94b8-3147efd1b6f5" data-blockingmode="auto" type="text/javascript"></script>
+
+      </head> */}
       {/* <GoogleTagManager gtmId="G-FPHQXNL5SQ" />
       <GoogleAnalytics gaId="G-FPHQXNL5SQ" /> */}
       <body
