@@ -16,7 +16,7 @@ export const GlossaryNav: FC<IGlossaryNav> = ({ glossaries }) => {
   );
 
   return (
-    <div className="pr-6 order-last md:order-none">
+    <div className="laptop:pr-6 order-last md:order-none">
       <div className="sticky top-[100px] flex flex-col pt-2">
         {_.map(groupedGlossaries, (letter) => {
           return <GlossaryLetter letter={letter} key={letter} />;

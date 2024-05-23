@@ -41,7 +41,7 @@ export default function Form() {
         phoneNumber: "",
         company: "",
         subject: "",
-        // recaptcha: "",
+        recaptcha: "",
         message: "",
       });
       recaptchaRef.current?.reset();
@@ -170,6 +170,7 @@ export default function Form() {
         <Controller
           name={CFormKeys.RECAPTCHA}
           control={control}
+          rules={{ required: false }}
           render={({ field: { onChange, value }, fieldState: { error } }) => (
             <ReCAPTCHA
               ref={recaptchaRef}

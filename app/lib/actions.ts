@@ -1,12 +1,12 @@
-import { IFormData } from "../types/definitions";
-import { ApiKeys } from "./apiConfig";
+import { IFormData } from '../types/definitions';
+import { ApiKeys } from './apiConfig';
 
 export const sendMail = async (formData: IFormData): Promise<Response> => {
   try {
     const response = await fetch(ApiKeys.CONTACT, {
-      method: "POST",
+      method: 'POST',
       headers: {
-        "Content-Type": "application/json",
+        'Content-Type': 'application/json',
       },
       body: JSON.stringify(formData),
     });
@@ -16,7 +16,7 @@ export const sendMail = async (formData: IFormData): Promise<Response> => {
     }
     return response;
   } catch (error) {
-    console.error("Send mail Error:", error);
-    throw new Error("Failed to fetch.");
+    console.error('Send mail Error:', error);
+    throw new Error('Failed to fetch.');
   }
 };

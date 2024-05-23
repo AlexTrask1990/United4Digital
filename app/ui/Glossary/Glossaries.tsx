@@ -35,10 +35,10 @@ export const Glossaries: FC<IGlossaryNav> = ({ glossaries }) => {
                   return (
                     <div
                       key={slug}
-                      className="flex md:w-1/3 min-w-[350px] max-w-[350px] py-4"
+                      className="flex md:w-1/3 min-w-[300px] max-w-[350px] py-4"
                     >
                       <Link href={`/glossary/${slug}`}>
-                        <span className="text-slate-700 truncate min-w-[350px] max-w-[350px] block w-full hover:text-teal-600">
+                        <span className="text-slate-700 truncate min-w-[300px] max-w-[350px] block  hover:text-teal-600">
                           {title}
                         </span>
                       </Link>
