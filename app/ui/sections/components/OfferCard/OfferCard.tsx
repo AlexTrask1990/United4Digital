@@ -4,7 +4,7 @@ interface IProps {
   src: string;
   alt: string;
   text: string;
-  className: string;
+  className?: string;
 }
 export default function OfferCard({ src, alt, text, className }: IProps) {
   return (

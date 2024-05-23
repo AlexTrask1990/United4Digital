@@ -3,39 +3,7 @@ import OfferCard from "@/app/ui/sections/components/OfferCard/OfferCard";
 import SectionHeading from "@/app/ui/sections/components/Heading/SectionHeading";
 import Container from "@/app/ui/Container/Container";
 import SectionWrapper from "@/app/ui/SectionWrapper/SectionWrapper";
-import { IOfferList } from "@/app/types/definitions";
 import AboutUsLottie from "@/app/ui/sections/components/LottieImage/AboutUsLottie";
-
-const offerList: IOfferList[] = [
-  {
-    src: "/offerIconOne.svg",
-    alt: "Offer comprehensive solution",
-    text: `At United4Digital, we offer comprehensive solutions tailored to innovate
-  the dynamic landscape of digital marketing. Whether through our
-  proprietary video streaming applications or exclusive exchanges for
-  advertisers and publishers, we strive to forge a seamless synergy
-  between our clients' objectives and their audience. Our focus lies in
-  managing the entirety of the advertising framework, digital
-  monetization, and strategic planning with a cohesive approach.`,
-  },
-  {
-    src: "/offerIconTwo.svg",
-    alt: "We specialize in providing scalable",
-    text: `We specialize in providing scalable, high quality, and trusted
-  inventory across various platforms including Display, Connected TV,
-  InApp, and Audio. Through meticulous selection processes, we handpick top-tier publishers and emerging high-quality content to
-  ensure that all our partners deliver a valuable advertising experience.
-  `,
-  },
-  {
-    src: "/offerIconThree.svg",
-    alt: "United4Digital is committed to maintaining the utmost quality",
-    text: `United4Digital is committed to maintaining the utmost quality of
-  traffic through strategic partnerships with leading data transparency
-  providers and anti-fraud protection systems. Our dedication to excellence ensures that our clients receive nothing short of the best
-  in traffic quality.`,
-  },
-];
 
 export default function AboutUsSection() {
   return (
@@ -66,20 +34,38 @@ export default function AboutUsSection() {
         </Container>
         <Container>
           <div className="laptop:pt-20 pt-10 laptop:flex">
-            {_.map(
-              offerList,
-              ({ src, alt, text }: IOfferList, index: number) => {
-                return (
-                  <OfferCard
-                    key={alt}
-                    src={src}
-                    alt={alt}
-                    text={text}
-                    className={`${index && "mt-6 laptop:mt-0 laptop:ml-6"}`}
-                  />
-                );
+            <OfferCard
+              src={"/offerIconOne.svg"}
+              alt={"Offer comprehensive solution"}
+              text={`At United4Digital, we offer comprehensive solutions tailored to innovate
+                    the dynamic landscape of digital marketing. Whether through our
+                    proprietary video streaming applications or exclusive exchanges for
+                    advertisers and publishers, we strive to forge a seamless synergy
+                    between our clients' objectives and their audience. Our focus lies in
+                    managing the entirety of the advertising framework, digital
+                    monetization, and strategic planning with a cohesive approach.`}
+            />
+            <OfferCard
+              src={"/offerIconTwo.svg"}
+              alt={"We specialize in providing scalable"}
+              text={`We specialize in providing scalable, high quality, and trusted
+              inventory across various platforms including Display, Connected TV,
+              InApp, and Audio. Through meticulous selection processes, we handpick top-tier publishers and emerging high-quality content to
+              ensure that all our partners deliver a valuable advertising experience.`}
+              className={"mt-6 laptop:mt-0 laptop:ml-6"}
+            />
+
+            <OfferCard
+              src={"/offerIconThree.svg"}
+              alt={
+                "United4Digital is committed to maintaining the utmost quality"
               }
-            )}
+              text={`United4Digital is committed to maintaining the utmost quality of
+              traffic through strategic partnerships with leading data transparency
+              providers and anti-fraud protection systems. Our dedication to excellence ensures that our clients receive nothing short of the best
+              in traffic quality.`}
+              className={"mt-6 laptop:mt-0 laptop:ml-6"}
+            />
           </div>
         </Container>
       </div>
