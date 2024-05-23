@@ -18,6 +18,11 @@
   @apply rounded-custom;
 }
 
+.translate-z-0 {
+  transform: translateZ(0);
+}
+
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
