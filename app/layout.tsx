@@ -4,6 +4,13 @@ import { GoogleAnalytics, GoogleTagManager } from "@next/third-parties/google";
 import "./globals.css";
 
 export const metadata: Metadata = {
+  metadataBase: new URL(process.env.BASE_URL || ""),
+  alternates: {
+    canonical: "/",
+    languages: {
+      "en-US": "/en-US",
+    },
+  },
   title: {
     default: "United4Digital",
     template: "%s - United 4 Digital",

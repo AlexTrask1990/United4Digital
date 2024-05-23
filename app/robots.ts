@@ -6,10 +6,9 @@ export default function robots(): MetadataRoute.Robots {
       {
         userAgent: "*",
         allow: "/",
-        disallow: ["/admin", "/privacy"]
-      }
+        disallow: ["/cookie-policy", "/terms", "/privacy-policy"],
+      },
     ],
-    sitemap: `https://united4-digital.vercel.app/sitemap.xml`,
-  }
+    sitemap: `${process.env.BASE_URL}/sitemap.xml`,
+  };
 }
-//NEXT_PUBLIC_BASE_URL

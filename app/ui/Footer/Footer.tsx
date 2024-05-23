@@ -18,7 +18,7 @@ export default function Footer() {
               className="w-[125px] h-[84px]"
             />
           </aside>
-          <nav className="flex flex-col tablet:flex-row px-4 py-[20px] tablet:py-0 justify-between text-base max-w-[499px] tablet:h-[60px]">
+          <nav className="flex flex-col gap-1 tablet:gap-4 tablet:flex-row px-4 py-[20px] tablet:py-0 justify-between text-base max-w-[499px] tablet:h-[60px]">
             <div className="flex flex-col justify-between">
               <Link
                 aria-label="About us link"
