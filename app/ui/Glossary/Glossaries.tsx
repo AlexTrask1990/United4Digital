@@ -30,7 +30,7 @@ export const Glossaries: FC<IGlossaryNav> = ({ glossaries }) => {
               <span className="flex py-4 text-7xl text-slate-700">
                 {letter}
               </span>
-              <div className="flex flex-wrap">
+              <div className="flex flex-wrap gap-2">
                 {_.map(nameGroups, ({ slug, title }) => {
                   return (
                     <div

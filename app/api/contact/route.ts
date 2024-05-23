@@ -4,16 +4,8 @@ import * as _ from "lodash";
 
 export async function POST(req: Request) {
   const data = await req.json();
-  const PERSONAL_EMAIL = _.get(
-    process.env,
-    "PERSONAL_EMAIL",
-    "personal@gmail.com"
-  );
-  const EMAIL_PASSWORD = _.get(
-    process.env,
-    "EMAIL_PASSWORD",
-    "ddf ewe sdf rew"
-  );
+  const SUPPORT_EMAIL = _.get(process.env, "SUPPORT_EMAIL", "");
+  const EMAIL_PASSWORD = _.get(process.env, "EMAIL_PASSWORD", "");
   const firstName = _.get(data, "firstName", "Jane");
   const lastName = _.get(data, "lastName", "Doe");
   const email = _.get(data, "email", "jane@gmail.com");
@@ -29,16 +21,16 @@ export async function POST(req: Request) {
       port: 587,
       secure: false,
       auth: {
-        user: PERSONAL_EMAIL,
+        user: SUPPORT_EMAIL,
         pass: EMAIL_PASSWORD,
       },
     });
     const info = await transporter.sendMail({
       from: {
         name: `${firstName} ${lastName}`,
-        address: PERSONAL_EMAIL,
+        address: email,
       },
-      to: PERSONAL_EMAIL,
+      to: SUPPORT_EMAIL,
       subject: subject,
       text: message,
       html: `
