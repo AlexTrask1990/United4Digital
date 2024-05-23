@@ -21,7 +21,7 @@ export const Glossaries: FC<IGlossaryNav> = ({ glossaries }) => {
     .value();
 
   return (
-    <div className="w-full">
+    <div className="w-full pl-6">
       {_.map(
         _.sortBy(Object.entries(groupedGlossaries || {}), [0]),
         ([letter, nameGroups]) => {
@@ -30,17 +30,17 @@ export const Glossaries: FC<IGlossaryNav> = ({ glossaries }) => {
               <span className="flex py-4 text-7xl text-slate-700">
                 {letter}
               </span>
-              <div className="flex flex-wrap gap-2">
+              <div className="flex flex-col sm:flex-row flex-wrap">
                 {_.map(nameGroups, ({ slug, title }) => {
                   return (
                     <div
                       key={slug}
-                      className="flex md:w-1/3 min-w-[300px] max-w-[350px] py-4"
+                      className="max-w-[200px] sm:max-w-[400px] sm:w-1/2 lg:w-1/4 p-2"
                     >
                       <Link href={`/glossary/${slug}`}>
-                        <span className="text-slate-700 truncate min-w-[300px] max-w-[350px] block  hover:text-teal-600">
+                        <p className="text-slate-700 truncate block hover:text-teal-600">
                           {title}
-                        </span>
+                        </p>
                       </Link>
                     </div>
                   );

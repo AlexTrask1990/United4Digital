@@ -5,6 +5,7 @@ import Image from "next/image";
 import { notFound } from "next/navigation";
 import * as _ from "lodash";
 import { GlossaryItemBody } from "@/app/ui/Glossary/GlossaryItemBody";
+import Link from "next/link";
 
 export default async function GlossaryItem({ params }: Params) {
   const glossary = getGlossaryBySlug(params.slug);
@@ -16,6 +17,16 @@ export default async function GlossaryItem({ params }: Params) {
 
   return (
     <main className="min-h-[calc(100vh-86px)] py-10 container mx-auto px-4 laptop:px-0">
+      <div className="max-w-2xl mx-auto pb-10">
+        <Link
+          aria-label="Glossary link"
+          href="/glossary"
+          className="text-slate-700 hover:text-sky-500"
+        >
+          GLOSSARY
+        </Link>
+        <span> / {params.slug}</span>
+      </div>
       <div className="max-w-2xl mx-auto">
         <Image
           width={0}
