@@ -39,6 +39,12 @@ export type ILink = {
   [CommonFields.HREF]: string;
 };
 
+export interface IOfferList {
+  [CommonFields.SRC]: string;
+  [CommonFields.ALT]: string;
+  [CommonFields.TEXT]: string;
+}
+
 export enum GlossaryFields {
   SLUG = "slug",
   TITLE = "title",
