@@ -4,10 +4,19 @@ import { openSans } from "@/app/ui/fonts";
 import Footer from "@/app/ui/Footer/Footer";
 import Header from "@/app/ui/Header/Header";
 
-export const metadata: Metadata = {
-  title: "Glossary",
-  description: "Glossary page",
-};
+export function generateMetadata(): Metadata {
+  return {
+    alternates: {
+      canonical: `${process.env.BASE_URL}/glossary`,
+    },
+    title: "List of Glossary",
+    description: "List of Glossary",
+    openGraph: {
+      title: "List of Glossary",
+      url: `${process.env.BASE_URL}/glossary`,
+    },
+  };
+}
 
 export default function GlossaryLayout({
   children,

@@ -57,6 +57,9 @@ export function generateMetadata({ params }: Params): Metadata {
   const title = `${general.title}`;
 
   return {
+    alternates: {
+      canonical: `${process.env.BASE_URL}/glossary/${params.slug}`,
+    },
     title,
     openGraph: {
       title,
