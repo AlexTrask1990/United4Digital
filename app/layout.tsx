@@ -37,8 +37,8 @@ export default function RootLayout({
           type="text/javascript"
         ></script>
       </head>
-      {/* <GoogleTagManager gtmId="G-FPHQXNL5SQ" />
-      <GoogleAnalytics gaId="G-FPHQXNL5SQ" /> */}
+      <GoogleTagManager gtmId={process.env.GOOGLE_TAG_MANAGER_ID || ""} />
+      <GoogleAnalytics gaId={process.env.GOOGLE_ANALYTICS_ID || ""} />
       <body
         className={`${openSans.variable} flex flex-col min-h-screen antialiased`}
       >

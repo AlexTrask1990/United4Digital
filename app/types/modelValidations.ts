@@ -15,14 +15,10 @@ export const schema = yup
       .string()
       .email("Must be a valid email")
       .required("Email is required"),
-    [CFormKeys.PHONE_NUMBER]: yup
-      .string()
-      .min(3, "Phone number must be at least 10 digits")
-      .max(13, "Phone number must be at most 15 digits"),
-
-    [CFormKeys.COMPANY]: yup.string(),
-    [CFormKeys.SUBJECT]: yup.string(),
-    [CFormKeys.MESSAGE]: yup.string(),
+    [CFormKeys.PHONE_NUMBER]: yup.string().max(15, "Phone number must be at most 15 characters."),
+    [CFormKeys.COMPANY]: yup.string().max(50, "Company name must be at most 50 characters."),
+    [CFormKeys.SUBJECT]: yup.string().max(50, "Subject must be at most 50 characters."),
+    [CFormKeys.MESSAGE]: yup.string().max(500, "Message must be at most 500 characters."),
     [CFormKeys.RECAPTCHA]: yup
       .string()
       .required("You must confirm that you are not a robot"),

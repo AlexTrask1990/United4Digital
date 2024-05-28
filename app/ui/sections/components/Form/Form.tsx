@@ -55,7 +55,7 @@ export default function Form() {
       <form onSubmit={handleSubmit(onSubmit)}>
         <div className="laptop:flex laptop:justify-between">
           {/* *** First Name *** */}
-          <label className="form-control w-full laptop:min-w-[300px] tablet:mr-4">
+          <label className="form-control relative w-full laptop:min-w-[300px] tablet:mr-4">
             <div className="label">
               <span className="font-medium">
                 First Name<span className="text-error">*</span>
@@ -112,7 +112,9 @@ export default function Form() {
           {/* *** Phone Number *** */}
           <label className="form-control w-full laptop:min-w-[300px] relative">
             <div className="label">
-              <span className="font-medium">Phone Number <span className="text-xs">(optional)</span></span>
+              <span className="font-medium">
+                Phone Number <span className="text-xs">(optional)</span>
+              </span>
             </div>
             <Controller
               control={control}
@@ -127,48 +129,71 @@ export default function Form() {
                   control={control}
                   rules={{ required: false }}
                   withCountryCallingCode={true}
-                  className="input rounded-md w-full"
+                  className={`input rounded-md w-full ${
+                    errors.phoneNumber && "input-error animate-pulse"
+                  }`}
                 />
               )}
             />
-            {/* {errors.phoneNumber && (
-              <p className="absolute text-error -top-2 border border-red-500">
+            {errors.phoneNumber && (
+              <p className="absolute text-error -bottom-4 right-0 text-xs">
                 {errors.phoneNumber.message}
               </p>
-            )} */}
+            )}
           </label>
         </div>
         {/* *** Company *** */}
-        <label className="form-control w-full">
+        <label className="form-control w-full relative">
           <div className="label">
             <span className="font-medium">Company</span>
           </div>
           <input
             type="text"
-            className="input rounded-md w-full"
+            className={`input rounded-md w-full ${
+              errors.company && "input-error animate-pulse"
+            }`}
             {...register(CFormKeys.COMPANY, { required: false })}
           />
+          {errors.company && (
+            <p className="absolute text-error -bottom-4 right-0 text-xs">
+              {errors.company.message}
+            </p>
+          )}
         </label>
         {/* *** Subject *** */}
-        <label className="form-control w-full">
+        <label className="form-control w-full relative">
           <div className="label">
             <span className="font-medium">Subject</span>
           </div>
           <input
             type="text"
-            className="input rounded-md w-full"
+            className={`input rounded-md w-full ${
+              errors.subject && "input-error animate-pulse"
+            }`}
             {...register(CFormKeys.SUBJECT, { required: false })}
           />
+          {errors.subject && (
+            <p className="absolute text-error -bottom-4 right-0 text-xs">
+              {errors.subject.message}
+            </p>
+          )}
         </label>
         {/* *** Message *** */}
-        <label className="form-control">
+        <label className="form-control relative">
           <div className="label">
             <span className="font-medium">Message</span>
           </div>
           <textarea
-            className="textarea rounded-md h-24"
+            className={`input rounded-md h-24 ${
+              errors.message && "input-error animate-pulse"
+            }`}
             {...register(CFormKeys.MESSAGE, { required: false })}
           ></textarea>
+          {errors.message && (
+            <p className="absolute text-error -bottom-4 right-0 text-xs">
+              {errors.message.message}
+            </p>
+          )}
         </label>
 
         <Controller
