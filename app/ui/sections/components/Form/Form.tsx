@@ -28,7 +28,6 @@ export default function Form() {
     resolver: yupResolver(schema),
   });
   const onSubmit: SubmitHandler<IFormData> = async (data) => {
-    console.log(data, "data");
     setIsLoading(true);
     const response = await sendMail(data);
     if (response.ok) {
@@ -113,7 +112,7 @@ export default function Form() {
           {/* *** Phone Number *** */}
           <label className="form-control w-full laptop:min-w-[300px] relative">
             <div className="label">
-              <span className="font-medium">Phone Number</span>
+              <span className="font-medium">Phone Number <span className="text-xs">(optional)</span></span>
             </div>
             <Controller
               control={control}
@@ -132,6 +131,11 @@ export default function Form() {
                 />
               )}
             />
+            {/* {errors.phoneNumber && (
+              <p className="absolute text-error -top-2 border border-red-500">
+                {errors.phoneNumber.message}
+              </p>
+            )} */}
           </label>
         </div>
         {/* *** Company *** */}
