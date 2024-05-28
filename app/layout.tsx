@@ -29,13 +29,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <script
+        {/* <script
           id="Cookiebot"
           src="https://consent.cookiebot.com/uc.js"
           data-cbid="bf1218b1-b997-4221-94b8-3147efd1b6f5"
           data-blockingmode="auto"
           type="text/javascript"
-        ></script>
+        ></script> */}
+        <script id="cookieyes" type="text/javascript" src="https://cdn-cookieyes.com/client_data/6c016d1629bcb9631a32f662/script.js"></script>
       </head>
       <GoogleTagManager gtmId={process.env.GOOGLE_TAG_MANAGER_ID || ""} />
       <GoogleAnalytics gaId={process.env.GOOGLE_ANALYTICS_ID || ""} />
