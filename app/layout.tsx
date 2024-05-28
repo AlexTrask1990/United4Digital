@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { openSans } from "@/app/ui/fonts";
-import { GoogleAnalytics, GoogleTagManager } from "@next/third-parties/google";
+import { GoogleTagManager } from "@next/third-parties/google";
 import "./globals.css";
 
 export const metadata: Metadata = {
