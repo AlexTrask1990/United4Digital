@@ -26,7 +26,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head></head>
+      <head>
+      <meta name="google-site-verification" content={process.env.GSV} />
+      </head>
       <GoogleTagManager gtmId={process.env.GOOGLE_TAG_MANAGER_ID || ""} />
       <Analytics />
       <body
