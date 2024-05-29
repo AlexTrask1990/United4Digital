@@ -7,6 +7,7 @@ import Container from "@/app/ui/Container/Container";
 import SectionWrapper from "@/app/ui/SectionWrapper/SectionWrapper";
 import AboutUsLottie from "@/app/ui/sections/components/LottieImage/AboutUsLottie";
 import { IOfferList } from "@/app/types/definitions";
+import Image from "next/image";
 
 const offerList: IOfferList[] = [
   {
@@ -68,7 +69,7 @@ export default function AboutUsSection() {
         </Container>
         <Container>
           <div className="laptop:pt-20 pt-10 laptop:flex">
-            {offerList && offerList.map(({ src, alt, text }: IOfferList, index: number) => {
+            {/* {offerList && offerList.map(({ src, alt, text }: IOfferList, index: number) => {
               return (
                 <OfferCard
                   key={alt}
@@ -78,7 +79,49 @@ export default function AboutUsSection() {
                   className={`${index && "mt-6 laptop:mt-0 laptop:ml-6"}`}
                 />
               );
-            })}
+            })} */}
+            <div
+              className={`bg-white py-8 px-10 rounded-lg flex flex-col items-center laptop:block`}
+            >
+              <Image
+                src={"/offerIconOne.svg"}
+                width={0}
+                height={0}
+                alt={"Offer comprehensive solution"}
+                className="w-[100px] h-auto laptop:w-auto"
+              />
+              <p className="pt-10">
+                At United4Digital, we offer comprehensive solutions tailored to
+                innovate the dynamic landscape of digital marketing. Whether
+                through our proprietary video streaming applications or
+                exclusive exchanges for advertisers and publishers, we strive to
+                forge a seamless synergy between our clients' objectives and
+                their audience. Our focus lies in managing the entirety of the
+                advertising framework, digital monetization, and strategic
+                planning with a cohesive approach.
+              </p>
+            </div>
+            <div
+              className={`bg-white py-8 px-10 rounded-lg flex flex-col items-center laptop:block`}
+            >
+              <Image
+                src={"/offerIconOne.svg"}
+                width={0}
+                height={0}
+                alt={"Offer comprehensive solution"}
+                className="w-[100px] h-auto laptop:w-auto"
+              />
+              <p className="pt-10">
+                At United4Digital, we offer comprehensive solutions tailored to
+                innovate the dynamic landscape of digital marketing. Whether
+                through our proprietary video streaming applications or
+                exclusive exchanges for advertisers and publishers, we strive to
+                forge a seamless synergy between our clients' objectives and
+                their audience. Our focus lies in managing the entirety of the
+                advertising framework, digital monetization, and strategic
+                planning with a cohesive approach.
+              </p>
+            </div>
           </div>
         </Container>
       </div>
