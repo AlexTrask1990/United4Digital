@@ -14,9 +14,9 @@ export default function MonetizationGraph() {
     <>
     <Image
         alt="Graph showing revenue and monetization trends"
-        src="/monetization.svg"
-        width={520}
-        height={260}
+        src="/monetization-mobile.svg"
+        width={0}
+        height={0}
         className="w-auto h-auto cursor-zoom-in laptop:hidden"
         onClick={handleClick}
         priority
@@ -24,8 +24,8 @@ export default function MonetizationGraph() {
       <Image
         alt="Graph showing revenue and monetization trends"
         src="/monetization.svg"
-        width={1040}
-        height={520}
+        width={0}
+        height={0}
         className="w-auto h-auto cursor-zoom-in hidden laptop:flex"
         onClick={handleClick}
       />
