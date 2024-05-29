@@ -11,26 +11,26 @@ import AdvertLottie from "./components/LottieImage/AdvertLottie";
 
 const advertiserList: IOfferList[] = [
   {
-    src: "/advOne.svg",
+    src: "/content/advOne.svg",
     alt: "Comprehensive digital advertising platform showcasing high viewability, diverse targeting options, and extensive global traffic including Display, Video, Audio, and CTV/OTT channels with access to top-tier publishers.",
     text: `Expect a high viewability rate, a wide range of targeting options, and
   extensive global traffic across Display, Video, Audio, and CTV/OTT
   platforms and access to top-tier publishers within the industry.`,
   },
   {
-    src: "/advTwo.svg",
+    src: "/content/advTwo.svg",
     alt: "Team of experts using programmatic strategies and innovative technologies to ensure optimal outcomes for clients, backed by years of experience.",
     text: `Leveraging our programmatic capabilities, innovative solutions, and
     years of experience, we're committed to achieving optimal results for
     you.`,
   },
   {
-    src: "/advThree.svg",
+    src: "/content/advThree.svg",
     alt: "Global digital advertising network showcasing over 1 billion daily ad impressions across multiple formats.",
     text: `Traffic Volume: Gain access to over 1 billion daily ad impressions worldwide across diverse ad formats.`,
   },
   {
-    src: "/advFour.svg",
+    src: "/content/advFour.svg",
     alt: "Comprehensive analytics dashboard displaying detailed traffic reports for effective campaign optimization and scaling.",
     text: `Analytics: Detailed traffic reports empower you to focus on optimizing
     and scaling your campaigns effectively.`,
@@ -58,7 +58,7 @@ export default function AdvertisersSection() {
             </div>
             <div className="order-2">
               <Image
-                src="/advertisers.gif"
+                src="/content/advertisers.gif"
                 width={0}
                 height={0}
                 alt="Not found page image"

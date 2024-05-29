@@ -18,7 +18,7 @@ export default function GeneralSchemeOfWork() {
         </h3>
         <Image
           alt="General scheme of work img"
-          src="/buy-sell-mobile.svg"
+          src="/content/buy-sell-mobile.svg"
           width={0}
           height={0}
           className="w-auto h-auto cursor-zoom-in order-1 laptop:hidden"
@@ -26,7 +26,7 @@ export default function GeneralSchemeOfWork() {
         />
         <Image
           alt="General scheme of work img"
-          src="/buy-sell.svg"
+          src="/content/buy-sell.svg"
           width={0}
           height={0}
           className="w-auto h-auto hidden laptop:flex cursor-zoom-in order-1 laptop:order-2"
@@ -37,7 +37,7 @@ export default function GeneralSchemeOfWork() {
         <div className="w-full h-full flex justify-center">
           <Image
             alt="General scheme of work img"
-            src="/buy-sell.svg"
+            src="/content/buy-sell.svg"
             width={0}
             height={0}
             className="w-full h-screen"

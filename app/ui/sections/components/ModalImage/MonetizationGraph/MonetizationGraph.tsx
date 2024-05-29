@@ -14,7 +14,7 @@ export default function MonetizationGraph() {
     <>
     <Image
         alt="Graph showing revenue and monetization trends"
-        src="/monetization-mobile.png"
+        src="/content/monetization-mobile.png"
         width={1040}
         height={520}
         className="w-auto h-auto cursor-zoom-in laptop:hidden"
@@ -22,7 +22,7 @@ export default function MonetizationGraph() {
       />
       <Image
         alt="Graph showing revenue and monetization trends"
-        src="/monetization.svg"
+        src="/content/monetization.svg"
         width={0}
         height={0}
         className="w-auto h-auto cursor-zoom-in hidden laptop:flex"
@@ -32,11 +32,9 @@ export default function MonetizationGraph() {
         <div className="w-full h-full flex justify-center">
           <Image
             alt="Monetization graph"
-            src="/monetization-mobile.png"
+            src="/content/monetization-mobile.png"
             objectFit="contain"
             layout="fill"
-        // width={0}
-        // height={0}
             className="w-full h-screen"
             onClick={handleClick}
           />

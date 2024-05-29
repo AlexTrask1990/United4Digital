@@ -58,7 +58,7 @@ export default function PublishersSection() {
 
           <div className="flex laptop:justify-between items-center flex-col laptop:flex-row-reverse pt-28">
             <div className="order-2 laptop:order-1">
-              <Image width={0} height={0} src="/comprehensive.gif" alt="Comprehensive image" className="w-auto h-auto"/>
+              <Image width={0} height={0} src="/content/comprehensive.gif" alt="Comprehensive image" className="w-auto h-auto"/>
             </div>
 
             <div className="text-primary max-w-[500px] order-1 laptop:order-2 pb-8 laptop:pb-0 laptop:mr-4">

@@ -11,7 +11,7 @@ export default function Footer() {
         <div className="flex flex-col tablet:flex-row tablet:items-end pt-[39px]">
           <aside className="w-auto h-auto pr-[90px]">
             <Image
-              src="/logo.svg"
+              src="/content/logo.svg"
               width={125}
               height={84}
               alt="Logotype United4Digital"
@@ -108,7 +108,7 @@ export default function Footer() {
         </div>
         <div className="flex items-center pt-5 laptop:pt-0">
           <Image
-            src="/point.svg"
+            src="/content/point.svg"
             width={13}
             height={17}
             alt="A point on the map"

@@ -12,19 +12,35 @@ export default function IntegrationProcessGraph() {
   }, []);
   return (
     <>
-      <Image
+      {/* <Image
         alt="Flowchart depicting the integration process"
-        src="/integration-process.svg"
+        src="/content/integration-process.svg"
         width={0}
         height={0}
         className="w-auto h-auto cursor-zoom-in"
+        onClick={handleClick}
+      /> */}
+      <Image
+        alt="Flowchart depicting the integration process"
+        src="/content/integration-process-mobile.png"
+        width={1010}
+        height={490}
+        className="w-auto h-auto cursor-zoom-in flex laptop:hidden"
+        onClick={handleClick}
+      />
+      <Image
+        alt="Flowchart depicting the integration process"
+        src="/content/integration-process.svg"
+        width={0}
+        height={0}
+        className="w-auto h-auto cursor-zoom-in hidden laptop:flex"
         onClick={handleClick}
       />
       <dialog id="integration-process-modal" className="modal w-full bg-gray-transparent-60">
         <div className="w-full h-full flex justify-center">
           <Image
             alt="Integration process graph"
-            src="/integration-process.svg"
+            src="/content/integration-process.svg"
             width={0}
             height={0}
             className="w-full h-screen"

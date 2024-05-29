@@ -1,7 +1,7 @@
 "use client";
 
 import Lottie from "react-lottie";
-import animationData from "@/public/social-media.json";
+import animationData from "@/public/content/social-media.json";
 
 const defaultOptions = {
   loop: true,

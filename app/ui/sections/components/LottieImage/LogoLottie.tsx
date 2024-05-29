@@ -2,7 +2,7 @@
 
 import Lottie from "react-lottie";
 import { useState, useEffect } from "react";
-import animationData from "@/public/logoU4D.json";
+import animationData from "@/public/content/logoU4D.json";
 
 
 const defaultOptions = {

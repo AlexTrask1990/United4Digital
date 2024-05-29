@@ -1,7 +1,7 @@
 "use client";
 
 import Lottie from "react-lottie";
-import animationData from "@/public/contactusLottie.json";
+import animationData from "@/public/content/contactusLottie.json";
 
 const defaultOptions = {
   loop: true,

@@ -8,7 +8,7 @@ import { IOfferList } from "@/app/types/definitions";
 
 const offerList: IOfferList[] = [
   {
-    src: "/offerIconOne.svg",
+    src: "/content/offerIconOne.svg",
     alt: "Offer comprehensive solution",
     text: `At United4Digital, we offer comprehensive solutions tailored to innovate
   the dynamic landscape of digital marketing. Whether through our
@@ -19,7 +19,7 @@ const offerList: IOfferList[] = [
   monetization, and strategic planning with a cohesive approach.`,
   },
   {
-    src: "/offerIconTwo.svg",
+    src: "/content/offerIconTwo.svg",
     alt: "We specialize in providing scalable",
     text: `We specialize in providing scalable, high quality, and trusted
   inventory across various platforms including Display, Connected TV,
@@ -28,7 +28,7 @@ const offerList: IOfferList[] = [
   `,
   },
   {
-    src: "/offerIconThree.svg",
+    src: "/content/offerIconThree.svg",
     alt: "United4Digital is committed to maintaining the utmost quality",
     text: `United4Digital is committed to maintaining the utmost quality of
   traffic through strategic partnerships with leading data transparency

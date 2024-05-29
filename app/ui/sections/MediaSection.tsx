@@ -32,10 +32,9 @@ export default function MediaSection() {
             </div>
             <div className="w-auto h-auto max-w-[730px] max-h-[406px]">
               <Image
-                src="/your-adv.gif"
+                src="/content/your-adv.gif"
                 width={0}
                 height={0}
-                unoptimized={true}
                 alt="Customized programmatic media buying to effectively position your ads for optimal user acquisition, leveraging deep expertise and strategic relationships."
                 className="w-auto h-auto"
               />
@@ -43,7 +42,7 @@ export default function MediaSection() {
           </div>
           <div className="pt-20 laptop:flex laptop:justify-between">
             <InfoCard
-              src="/social-media-icon.svg"
+              src="/content/social-media-icon.svg"
               alt="United4Digital's team delivering multi-platform social media campaigns to engage audiences and meet KPIs, boosting brand promotion and sales."
               text={`We deliver comprehensive campaigns across all major social platforms, 
             allowing you to reach engaged audience and achieve the established KPIs.`}
@@ -54,7 +53,7 @@ export default function MediaSection() {
               className={"max-w-[744px]"}
             />
             <InfoCard
-              src="/seo-icon.svg"
+              src="/content/seo-icon.svg"
               alt="SEO specialists employing a data-driven approach to enhance organic traffic by adapting to user intent and search engine algorithms."
               text={`Today's SEO landscape is driven by user intent and semantics. Our
             specialists utilize a data-driven approach to unlock organic traffic

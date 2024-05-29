@@ -7,7 +7,7 @@ export default function NotFound() {
     <div className="flex flex-col justify-around container mx-auto laptop:px-4 h-screen bg-base-100 pt-8 pb-16">
       <div className="flex justify-center items-center laptop:justify-between">
         <Image
-          src="/logo-full.svg"
+          src="/content/logo-full.svg"
           width={0}
           height={0}
           alt="Logo of United4Digital"
@@ -19,7 +19,7 @@ export default function NotFound() {
       </div>
       <div className="flex flex-col h-full justify-end items-center px-2 laptop:justify-center">
         <Image
-          src="/not-found.svg"
+          src="/content/not-found.svg"
           width={0}
           height={0}
           alt="Not found page image"

@@ -5,7 +5,7 @@ export default function Logo() {
   return (
     <Link href="/" aria-label="Logo, home page link">
       <Image
-        src="/logo.svg"
+        src="/content/logo.svg"
         width={0}
         height={0}
         alt="Logo United for Digital"
