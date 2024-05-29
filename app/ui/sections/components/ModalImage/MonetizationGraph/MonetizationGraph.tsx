@@ -12,14 +12,22 @@ export default function MonetizationGraph() {
   }, []);
   return (
     <>
+    <Image
+        alt="Graph showing revenue and monetization trends"
+        src="/monetization.svg"
+        width={520}
+        height={260}
+        className="w-auto h-auto cursor-zoom-in laptop:hidden"
+        onClick={handleClick}
+        priority
+      />
       <Image
         alt="Graph showing revenue and monetization trends"
         src="/monetization.svg"
-        width={1010}
-        height={490}
-        className="w-auto h-auto cursor-zoom-in"
+        width={1040}
+        height={520}
+        className="w-auto h-auto cursor-zoom-in hidden laptop:flex"
         onClick={handleClick}
-        priority
       />
       <dialog id="monetization-modal" className="modal w-full bg-gray-transparent-60">
         <div className="w-full h-full flex justify-center">
