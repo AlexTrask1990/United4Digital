@@ -12,14 +12,7 @@ export default function IntegrationProcessGraph() {
   }, []);
   return (
     <>
-      {/* <Image
-        alt="Flowchart depicting the integration process"
-        src="/content/integration-process.svg"
-        width={0}
-        height={0}
-        className="w-auto h-auto cursor-zoom-in"
-        onClick={handleClick}
-      /> */}
+
       <Image
         alt="Flowchart depicting the integration process"
         src="/content/integration-process-mobile.png"
@@ -40,9 +33,9 @@ export default function IntegrationProcessGraph() {
         <div className="w-full h-full flex justify-center">
           <Image
             alt="Integration process graph"
-            src="/content/integration-process.svg"
-            width={0}
-            height={0}
+            src="/content/integration-process-mobile.png"
+            objectFit="contain"
+            layout="fill"
             className="w-full h-screen"
             onClick={handleClick}
           />
