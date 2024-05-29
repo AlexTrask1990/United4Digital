@@ -6,7 +6,6 @@ import SectionHeading from "@/app/ui/sections/components/Heading/SectionHeading"
 import Container from "@/app/ui/Container/Container";
 import SectionWrapper from "@/app/ui/SectionWrapper/SectionWrapper";
 import AboutUsLottie from "@/app/ui/sections/components/LottieImage/AboutUsLottie";
-import { IOfferList } from "@/app/types/definitions";
 import Image from "next/image";
 
 const offerList: IOfferList[] = [
@@ -83,14 +82,14 @@ export default function AboutUsSection() {
             <div
               className={`bg-white py-8 px-10 rounded-lg flex flex-col items-center laptop:block`}
             >
-              <Image
+              {/* <Image
                 src={"/offerIconOne.svg"}
                 width={0}
                 height={0}
                 alt={"Offer comprehensive solution"}
                 className="w-[100px] h-auto laptop:w-auto"
-              />
-              <p className="pt-10">
+              /> */}
+              <span className="pt-10">
                 At United4Digital, we offer comprehensive solutions tailored to
                 innovate the dynamic landscape of digital marketing. Whether
                 through our proprietary video streaming applications or
@@ -99,19 +98,19 @@ export default function AboutUsSection() {
                 their audience. Our focus lies in managing the entirety of the
                 advertising framework, digital monetization, and strategic
                 planning with a cohesive approach.
-              </p>
+              </span>
             </div>
             <div
               className={`bg-white py-8 px-10 rounded-lg flex flex-col items-center laptop:block`}
             >
-              <Image
+              {/* <Image
                 src={"/offerIconOne.svg"}
                 width={0}
                 height={0}
                 alt={"Offer comprehensive solution"}
                 className="w-[100px] h-auto laptop:w-auto"
-              />
-              <p className="pt-10">
+              /> */}
+              <span className="pt-10">
                 At United4Digital, we offer comprehensive solutions tailored to
                 innovate the dynamic landscape of digital marketing. Whether
                 through our proprietary video streaming applications or
@@ -120,7 +119,7 @@ export default function AboutUsSection() {
                 their audience. Our focus lies in managing the entirety of the
                 advertising framework, digital monetization, and strategic
                 planning with a cohesive approach.
-              </p>
+              </span>
             </div>
           </div>
         </Container>
