@@ -1,3 +1,5 @@
+"use client";
+
 import * as _ from "lodash";
 import OfferCard from "@/app/ui/sections/components/OfferCard/OfferCard";
 import SectionHeading from "@/app/ui/sections/components/Heading/SectionHeading";
@@ -65,21 +67,18 @@ export default function AboutUsSection() {
           </div>
         </Container>
         <Container>
-          <div className="laptop:pt-20 pt-10 laptop:flex translate-z-0">
-          {_.map(
-              offerList,
-              ({ src, alt, text }: IOfferList, index: number) => {
-                return (
-                  <OfferCard
-                    key={alt}
-                    src={src}
-                    alt={alt}
-                    text={text}
-                    className={`${index && "mt-6 laptop:mt-0 laptop:ml-6 translate-z-0"}`}
-                  />
-                );
-              }
-            )}
+          <div className="laptop:pt-20 pt-10 laptop:flex">
+            {offerList && offerList.map(({ src, alt, text }: IOfferList, index: number) => {
+              return (
+                <OfferCard
+                  key={alt}
+                  src={src}
+                  alt={alt}
+                  text={text}
+                  className={`${index && "mt-6 laptop:mt-0 laptop:ml-6"}`}
+                />
+              );
+            })}
           </div>
         </Container>
       </div>
