@@ -83,13 +83,13 @@ export default function AboutUsSection() {
             <div
               className={`bg-white py-8 px-10 rounded-lg flex flex-col items-center laptop:block`}
             >
-              {/* <Image
+              <Image
                 src={"/offerIconOne.svg"}
                 width={0}
                 height={0}
                 alt={"Offer comprehensive solution"}
                 className="w-[100px] h-auto laptop:w-auto"
-              /> */}
+              />
               <span className="pt-10">
                 At United4Digital, we offer comprehensive solutions tailored to
                 innovate the dynamic landscape of digital marketing. Whether
