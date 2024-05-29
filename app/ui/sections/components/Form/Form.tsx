@@ -51,7 +51,7 @@ export default function Form() {
   };
 
   return (
-    <div className="relative w-full bg-white rounded-md p-4 laptop:p-12 max-w-[792px] order-2 widescreen:order-1">
+    <div className="relative w-full bg-white rounded-md p-4 laptop:p-4 max-w-[792px] order-2 widescreen:order-1">
       <form onSubmit={handleSubmit(onSubmit)}>
         <div className="laptop:flex laptop:justify-between">
           {/* *** First Name *** */}
@@ -63,7 +63,8 @@ export default function Form() {
             </div>
             <input
               type="text"
-              className={`input rounded-md w-full ${
+              maxLength={41}
+              className={`input h-10 rounded-md w-full ${
                 errors.firstName && "input-error animate-pulse"
               }`}
               {...register(CFormKeys.FIRST_NAME, {
@@ -81,7 +82,8 @@ export default function Form() {
             </div>
             <input
               type="text"
-              className={`input rounded-md w-full ${
+              maxLength={41}
+              className={`input h-10 rounded-md w-full ${
                 errors.lastName && "input-error animate-pulse"
               }`}
               {...register(CFormKeys.LAST_NAME, {
@@ -94,7 +96,7 @@ export default function Form() {
 
         <div className="laptop:flex laptop:justify-between">
           {/* *** Email *** */}
-          <label className="form-control w-full laptop:min-w-[300px] tablet:mr-4">
+          <label className="form-control relative w-full laptop:min-w-[300px] tablet:mr-4">
             <div className="label">
               <span className="font-medium">
                 Email<span className="text-error">*</span>
@@ -102,12 +104,18 @@ export default function Form() {
             </div>
             <input
               type="text"
-              className={`input rounded-md w-full ${
+              maxLength={38}
+              className={`input h-10 rounded-md w-full ${
                 errors.email && "input-error animate-pulse"
               }`}
               {...register(CFormKeys.EMAIL, { required: true })}
               aria-invalid={errors.email ? "true" : "false"}
             />
+            {errors.email && (
+              <p className="absolute text-error -bottom-4 right-0 text-xs">
+                {errors.email.message}
+              </p>
+            )}
           </label>
           {/* *** Phone Number *** */}
           <label className="form-control w-full laptop:min-w-[300px] relative">
@@ -129,7 +137,8 @@ export default function Form() {
                   control={control}
                   rules={{ required: false }}
                   withCountryCallingCode={true}
-                  className={`input rounded-md w-full ${
+                  maxLength={16}
+                  className={`input h-10 rounded-md w-full ${
                     errors.phoneNumber && "input-error animate-pulse"
                   }`}
                 />
@@ -149,7 +158,8 @@ export default function Form() {
           </div>
           <input
             type="text"
-            className={`input rounded-md w-full ${
+            maxLength={50}
+            className={`input h-10 rounded-md w-full ${
               errors.company && "input-error animate-pulse"
             }`}
             {...register(CFormKeys.COMPANY, { required: false })}
@@ -166,8 +176,9 @@ export default function Form() {
             <span className="font-medium">Subject</span>
           </div>
           <input
+            maxLength={50}
             type="text"
-            className={`input rounded-md w-full ${
+            className={`input h-10 rounded-md w-full ${
               errors.subject && "input-error animate-pulse"
             }`}
             {...register(CFormKeys.SUBJECT, { required: false })}
@@ -184,6 +195,7 @@ export default function Form() {
             <span className="font-medium">Message</span>
           </div>
           <textarea
+            maxLength={500}
             className={`input rounded-md h-24 ${
               errors.message && "input-error animate-pulse"
             }`}
@@ -205,7 +217,7 @@ export default function Form() {
               ref={recaptchaRef}
               sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY || ""}
               onChange={onChange}
-              className="pt-8"
+              className="pt-6"
             />
           )}
         />
@@ -213,7 +225,7 @@ export default function Form() {
           <p className="absolute text-error">{errors.recaptcha.message}</p>
         )}
 
-        <div className="flex justify-between pt-8">
+        <div className="flex justify-between pt-6">
           <Button
             label={"Submit"}
             type={"submit"}

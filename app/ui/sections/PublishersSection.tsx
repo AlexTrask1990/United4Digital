@@ -58,7 +58,6 @@ export default function PublishersSection() {
 
           <div className="flex laptop:justify-between items-center flex-col laptop:flex-row-reverse pt-28">
             <div className="order-2 laptop:order-1">
-              {/* <PublishersLottie /> */}
               <Image width={0} height={0} src="/comprehensive.gif" alt="Comprehensive image" className="w-auto h-auto"/>
             </div>
 

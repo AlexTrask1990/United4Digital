@@ -15,8 +15,8 @@ export default function MonetizationGraph() {
       <Image
         alt="Graph showing revenue and monetization trends"
         src="/monetization.svg"
-        width={1010}
-        height={490}
+        width={0}
+        height={0}
         className="w-auto h-auto cursor-zoom-in"
         onClick={handleClick}
       />

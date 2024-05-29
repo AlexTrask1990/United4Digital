@@ -3,7 +3,7 @@ interface IProps {
 }
 export default function SectionHeading({ text }: IProps) {
   return (
-    <h2 className="text-start text-primary text-4xl font-bold pb-4 laptop:pb-16">
+    <h2 className="text-start text-primary text-4xl font-bold pb-4 laptop:pb-8">
       {text}
     </h2>
   );
