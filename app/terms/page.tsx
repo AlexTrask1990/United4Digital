@@ -18,7 +18,7 @@ export default function Terms() {
           use of United4Digital Website, located at{"  "}
           <Link href="https://united4digital.com/" className=" underline" aria-label="home page">
             https://united4digital.com
-          </Link>s
+          </Link>
         </NormalText>
       </Paragraph>
       <Paragraph className="pt-4">
@@ -38,7 +38,7 @@ export default function Terms() {
         or results pages on your own website is strictly forbidden. If you
         intend to engage in commercial activities using this website, you must
         arrange an agreement with United4Digital Ltd. in advance. For further
-        details, please contact us via e-mail: contact@united4digital.com
+        details, please contact us via e-mail: support@united4digital.com
       </Paragraph>
       <Paragraph className="pt-6">
         <BoldText>1. No representations or warranties</BoldText>
@@ -260,7 +260,7 @@ export default function Terms() {
       <Paragraph className="pt-4">
         Please send the written communication to our designated Copyright Agent
         via email at{" "}
-        <BoldText className="underline">contact@united4digital.com</BoldText>
+        <BoldText className="underline">support@united4digital.com</BoldText>
       </Paragraph>
       <Paragraph className="pt-6">
         <BoldText>10. Indemnification</BoldText>

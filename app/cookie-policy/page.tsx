@@ -16,7 +16,7 @@ export default function CookiePolicy() {
       </Paragraph>
       <Paragraph className="pt-4">
         Welcome to{" "}
-        <BoldText className="underline">united4digital.com,</BoldText>
+        <BoldText className="underline">united4digital.com</BoldText>,
         an online platform operated by <BoldText>United4Digital Ltd.</BoldText>,
         headquartered in Street index, City, United Kingdom (hereinafter
         referred to as
@@ -63,7 +63,7 @@ export default function CookiePolicy() {
         The Controller prioritizes the utmost protection of the privacy and
         personal data of its Consumers. For any inquiries related to this Cookie
         Policy, Consumers are encouraged to contact the Controller at any time
-        via email at <BoldText>contact@united4digital.com</BoldText>
+        via email at <BoldText>support@united4digital.com</BoldText>
       </Paragraph>
       <Paragraph className="pt-6">
         <BoldText>A. Understanding Cookies and Their Purpose:</BoldText>
