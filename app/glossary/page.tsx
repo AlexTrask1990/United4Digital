@@ -9,13 +9,13 @@ export default function Glossary() {
       <div className="flex text-slate-700">
         <div className="flex flex-col">
           <h3 className="flex text-start pb-4 text-4xl font-semibold">
-            Ready to start making good data-driven choices?
+            Excited to explore the world of digital marketing?
           </h3>
 
           <p className="text-start">
-            Digital marketing is a landscape in flux, that's why we've created a
-            mobile marketing glossary featuring must-know industry terms,
-            topics, and concepts to help you keep up
+            Browse through our comprehensive marketing glossary, packed with
+            essential industry terms to help you stay informed and ahead in the
+            field.
           </p>
           <GlossaryWrapper glossaries={glossaries} />
         </div>
