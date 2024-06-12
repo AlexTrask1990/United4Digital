@@ -3,7 +3,6 @@ import { openSans } from "@/app/ui/fonts";
 import { GoogleTagManager } from "@next/third-parties/google";
 import { Analytics } from "@vercel/analytics/react";
 import "./globals.css";
-import { Head } from "next/document";
 
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.BASE_URL || ""),
@@ -49,11 +48,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <Head>
+      <head>
       <title>United4Digital</title>
       <meta name="description" content="United4Digital - Digital Marketing Solutions" />
       <meta name="keywords" content="United4Digital, United 4 Digital, Digital Marketing Solutions" />
-      </Head>
+      </head>
       <GoogleTagManager gtmId={process.env.GOOGLE_TAG_MANAGER_ID || ""} />
       <Analytics />
       <body
