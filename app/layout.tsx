@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     type: "website",
     url: process.env.BASE_URL,
     title: "United4Digital",
-    description: "United4Digital - Digital Marketing Solutions",
+    description: "United4Digital - Digital Marketing Solutions, advertisement, online advertisement, publishers, advertisers, data transparency, online advertisement, online ads, video ads",
     images: [
       {
         url: `${process.env.BASE_URL}/favicon.ico`,
@@ -45,6 +45,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+      <meta name="keywords" content="United4Digital, United 4 Digital, Digital Marketing Solutions, advertisement, online advertisement, publishers, advertisers, data transparency, online advertisement, online ads, video ads" />
+      </head>
       <GoogleTagManager gtmId={process.env.GOOGLE_TAG_MANAGER_ID || ""} />
       <Analytics />
       <body
