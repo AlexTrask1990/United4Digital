@@ -23,9 +23,9 @@ export default function IntegrationProcessGraph() {
       />
       <Image
         alt="Flowchart depicting the integration process"
-        src="/content/integration-process.png"
-        width={1010}
-        height={490}
+        src="/content/integration-process.svg"
+        width={0}
+        height={0}
         className="w-auto h-auto cursor-zoom-in hidden laptop:flex"
         onClick={handleClick}
       />
