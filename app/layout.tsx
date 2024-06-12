@@ -45,11 +45,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head>
-      <title>United4Digital</title>
-      <meta name="description" content="United4Digital - Digital Marketing Solutions" />
-      <meta name="keywords" content="United4Digital, United 4 Digital, Digital Marketing Solutions" />
-      </head>
       <GoogleTagManager gtmId={process.env.GOOGLE_TAG_MANAGER_ID || ""} />
       <Analytics />
       <body
