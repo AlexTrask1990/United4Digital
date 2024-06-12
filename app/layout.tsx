@@ -9,10 +9,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: process.env.BASE_URL,
   },
-  title: {
-    default: "United4Digital",
-    template: "%s - United 4 Digital",
-  },
+  title: "United4Digital",
   description: "United4Digital - Digital Marketing Solutions",
   openGraph: {
     type: "website",
