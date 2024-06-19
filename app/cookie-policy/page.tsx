@@ -15,11 +15,10 @@ export default function CookiePolicy() {
         <BoldText>&quot;Consumer&quot;</BoldText>),
       </Paragraph>
       <Paragraph className="pt-4">
-        Welcome to{" "}
-        <BoldText className="underline">united4digital.com</BoldText>,
-        an online platform operated by <BoldText>United4Digital Ltd.</BoldText>,
-        headquartered in Street index, City, United Kingdom (hereinafter
-        referred to as
+        Welcome to <BoldText className="underline">united4digital.com</BoldText>
+        , an online platform operated by{" "}
+        <BoldText>United4Digital Ltd.</BoldText>, headquartered in 91 BATTERSEA
+        PARK ROAD LONDON ENGLAND SW8 4DU (hereinafter referred to as
         <BoldText>&quot;We&quot;</BoldText> or the{" "}
         <BoldText>&quot;Company&quot;</BoldText>).
       </Paragraph>

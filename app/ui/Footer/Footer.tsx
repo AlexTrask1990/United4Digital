@@ -107,14 +107,16 @@ export default function Footer() {
           </nav>
         </div>
         <div className="flex items-center pt-5 laptop:pt-0">
-          <Image
-            src="/content/point.svg"
-            width={13}
-            height={17}
-            alt="A point on the map"
-          />
+          <Link className="cursor-pointer" href="https://www.google.com/maps/place/91+Battersea+Park+Rd,+Nine+Elms,+London+SW8+4DU,+UK/@51.4792857,-0.1468657,17z/data=!4m6!3m5!1s0x48760502147e70c1:0x9611dd8d7c99444f!8m2!3d51.4792825!4d-0.1419948!16s%2Fg%2F11c29n36mp?entry=ttu">
+            <Image
+              src="/content/point.svg"
+              width={13}
+              height={17}
+              alt="A point on the map"
+            />
+          </Link>
           <span className="pl-[10px]">
-            Corporation 123 Main Street City, State, Zip Code Country
+            91 BATTERSEA PARK ROAD LONDON ENGLAND SW8 4DU
           </span>
         </div>
       </div>
