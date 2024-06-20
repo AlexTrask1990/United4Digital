@@ -9,13 +9,13 @@ ogImage:
 
 Ad impressions, also known as ad views, quantify the digital visibility of advertisements, posts, or web pages. They represent how many times content has been potentially seen by users.
 
-While ad impressions indicate exposure, they don't measure engagement like ad clicks do. Despite this limitation, impressions remain a crucial metric in digital marketing.
+While ad impressions indicate exposure, they do not measure engagement like ad clicks do. Despite this limitation, impressions remain a crucial metric in digital marketing.
 
 There are two main types of ad impressions:
 
-Served impressions: These count how often an ad is delivered by the ad server to a web page. However, even if an ad isn't visible (e.g., below the fold), it's still counted as served, potentially inflating the impression count.
+Served impressions: These count how often an ad is delivered by the ad server to a web page. However, even if an ad is not visible (e.g., below the fold), it is still counted as served, potentially inflating the impression count.
 
-Viewable impressions: This metric measures how many times the ad is actually seen by the target audience. It's based on specific criteria defined by industry standards, ensuring the ad is both viewable and engaged with.
+Viewable impressions: This metric measures how many times the ad is seen by the target audience. It is based on specific criteria defined by industry standards, ensuring the ad is both viewable and engaged with.
 
 While served impressions help gauge the initial reach of an ad campaign, viewable impressions provide a more accurate measure of its impact.
 
@@ -30,15 +30,15 @@ Ad impressions are vital in digital marketing for several reasons:
 They inform marketers about the reach and visibility of their campaigns.
 Essential for optimizing user acquisition efforts, where impressions help track campaign effectiveness.
 Crucial for app store optimization (ASO), aiding developers in enhancing their app's discoverability based on visibility metrics.
-Facilitate creative optimization by analyzing impression data to refine ad performance.
+Facilitate creative optimization by analysing impression data to refine ad performance.
 Usage in Mobile Marketing:
 Ad impressions play a pivotal role in optimizing mobile marketing campaigns by influencing key metrics:
 
 Click-through rate (CTR): Measures engagement by tracking the percentage of ad impressions that result in clicks.
 
-Cost per mille (CPM): Calculates the cost per thousand impressions, assisting in budget allocation and campaign ROI evaluation.
+Cost per mile (CPM): Calculates the cost per thousand impressions, assisting in budget allocation and campaign ROI evaluation.
 
-Effective cost per mille (eCPM): Evaluates revenue generated per thousand impressions, guiding publishers in maximizing ad space profitability.
+Effective cost per mile (eCPM): Evaluates revenue generated per thousand impressions, guiding publishers in maximizing ad space profitability.
 
 Mechanism of Ad Impressions:
 Ad servers deploy a tracking pixel on web pages to register impressions whenever the ad loads. However, this method has limitations, such as potential for impression fraud and inaccuracies in measuring true viewer engagement.
