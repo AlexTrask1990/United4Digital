@@ -30,24 +30,40 @@ export default function Form() {
   const onSubmit: SubmitHandler<IFormData> = async (data) => {
     setIsLoading(true);
     const response = await sendMail(data);
-    if (response.ok) {
-      setIsLoading(false);
-      setSuccess(true);
-      reset({
-        firstName: "",
-        lastName: "",
-        email: "",
-        phoneNumber: "",
-        company: "",
-        subject: "",
-        recaptcha: "",
-        message: "",
-      });
-      recaptchaRef.current?.reset();
-    } else {
-      setSuccess(false);
-      setIsLoading(false);
-    }
+    console.log(response, "response");
+
+    setIsLoading(false);
+    setSuccess(true);
+    reset({
+      firstName: "",
+      lastName: "",
+      email: "",
+      phoneNumber: "",
+      company: "",
+      subject: "",
+      recaptcha: "",
+      message: "",
+    });
+    recaptchaRef.current?.reset();
+
+    // if (response.ok) {
+    //   setIsLoading(false);
+    //   setSuccess(true);
+    //   reset({
+    //     firstName: "",
+    //     lastName: "",
+    //     email: "",
+    //     phoneNumber: "",
+    //     company: "",
+    //     subject: "",
+    //     recaptcha: "",
+    //     message: "",
+    //   });
+    //   recaptchaRef.current?.reset();
+    // } else {
+    //   setSuccess(false);
+    //   setIsLoading(false);
+    // }
   };
 
   return (
