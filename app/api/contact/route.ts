@@ -15,10 +15,9 @@ export async function POST(req: Request) {
     const message = _.get(data, "message", "Some message");
 
     const transporter = nodemailer.createTransport({
-      host: "smtpout.secureserver.net",
-      // host: "smtp.gmail.com",
-      port: 465,
-      secure: true,
+      host: "smtp.ethereal.email",
+      port: 587,
+      secure: false,
       auth: {
         user: process.env.SUPPORT_EMAIL,
         pass: process.env.EMAIL_PASSWORD,
@@ -49,12 +48,5 @@ export async function POST(req: Request) {
     return NextResponse.json({ info: info });
   } catch (error: any) {
     console.error("Send mail Error:", error);
-    if (error.response) {
-      console.error("SMTP Response:", error.response);
-    }
-    return NextResponse.json(
-      { error: "Failed to send mail." },
-      { status: 500 }
-    );
   }
 }
