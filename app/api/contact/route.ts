@@ -19,8 +19,10 @@ export async function POST(req: Request) {
       port: 587,
       secure: false,
       auth: {
-        user: process.env.SUPPORT_EMAIL,
-        pass: process.env.EMAIL_PASSWORD,
+        // user: process.env.SUPPORT_EMAIL,
+        // pass: process.env.EMAIL_PASSWORD,
+        user: "support@united4digital.com",
+        pass: "SupportU4d2024",
       },
     });
 
