@@ -15,18 +15,13 @@ export async function POST(req: Request) {
     const message = _.get(data, "message", "Some message");
 
     const transporter = nodemailer.createTransport({
-      host: "smtp.office365.com",
-      port: 587,
+      host: "smtpout.secureserver.net",
+      port: 465,
       secure: false,
       auth: {
         user: process.env.SUPPORT_EMAIL,
         pass: process.env.EMAIL_PASSWORD,
       },
-      tls: {
-        ciphers: 'SSLv3',
-      },
-      socketTimeout: 60000,
-      connectionTimeout: 60000,
     });
 
     const info = await transporter.sendMail({
