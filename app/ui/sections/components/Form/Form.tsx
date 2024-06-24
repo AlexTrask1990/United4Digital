@@ -28,12 +28,11 @@ export default function Form() {
     resolver: yupResolver(schema),
   });
   const onSubmit: SubmitHandler<IFormData> = async (data) => {
-    setIsLoading(true);
-    const response = await sendMail(data);
-    console.log(response, "response");
-
-    setIsLoading(false);
-    setSuccess(true);
+    await setIsLoading(true);
+    await sendMail(data);
+  
+    await setIsLoading(false);
+    await setSuccess(true);
     reset({
       firstName: "",
       lastName: "",
