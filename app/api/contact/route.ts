@@ -14,8 +14,8 @@ export async function POST(req: Request) {
     const subject = _.get(data, "subject", "Some subject");
     const message = _.get(data, "message", "Some message");
 
-    console.log(process.env.SUPPORT_EMAIL, "email");
-    console.log(process.env.EMAIL_PASSWORD, "pass");
+    console.log(`SUPPORT_EMAIL: ${process.env.SUPPORT_EMAIL}`);
+    console.log(`EMAIL_PASSWORD: ${process.env.EMAIL_PASSWORD}`);
 
     const transporter = nodemailer.createTransport({
       host: "smtpout.secureserver.net",
@@ -54,11 +54,11 @@ export async function POST(req: Request) {
 
     console.log("Email sent successfully:", info);
     return NextResponse.json({ info: info });
-  } catch (error) {
+  } catch (error: any) {
     console.error("Send mail Error:", error);
-    return NextResponse.json(
-      { error: "Failed to send mail." },
-      { status: 500 }
-    );
+    if (error.response) {
+      console.error("SMTP Response:", error.response);
+    }
+    return NextResponse.json({ error: "Failed to send mail." }, { status: 500 });
   }
 }

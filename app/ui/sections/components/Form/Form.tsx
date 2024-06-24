@@ -27,31 +27,25 @@ export default function Form() {
   } = useForm({
     resolver: yupResolver(schema),
   });
-
   const onSubmit: SubmitHandler<IFormData> = async (data) => {
     setIsLoading(true);
-    try {
-      const response = await sendMail(data);
-      if (response) {
-        setSuccess(true);
-        reset({
-          firstName: "",
-          lastName: "",
-          email: "",
-          phoneNumber: "",
-          company: "",
-          subject: "",
-          recaptcha: "",
-          message: "",
-        });
-        recaptchaRef.current?.reset();
-      } else {
-        setSuccess(false);
-      }
-    } catch (error) {
-      console.error("Error sending mail:", error);
+    const response = await sendMail(data);
+    if (response) {
+      setIsLoading(false);
+      setSuccess(true);
+      reset({
+        firstName: "",
+        lastName: "",
+        email: "",
+        phoneNumber: "",
+        company: "",
+        subject: "",
+        recaptcha: "",
+        message: "",
+      });
+      recaptchaRef.current?.reset();
+    } else {
       setSuccess(false);
-    } finally {
       setIsLoading(false);
     }
   };
