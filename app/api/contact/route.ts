@@ -14,9 +14,6 @@ export async function POST(req: Request) {
     const subject = _.get(data, "subject", "Some subject");
     const message = _.get(data, "message", "Some message");
 
-    console.log(process.env.SUPPORT_EMAIL, "email");
-    console.log(process.env.EMAIL_PASSWORD, "pass");
-
     const transporter = nodemailer.createTransport({
       host: "smtpout.secureserver.net",
       port: 465,
