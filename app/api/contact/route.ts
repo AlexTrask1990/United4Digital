@@ -17,19 +17,26 @@ export async function POST(req: Request) {
     console.log(`SUPPORT_EMAIL: ${process.env.SUPPORT_EMAIL}`);
     console.log(`EMAIL_PASSWORD: ${process.env.EMAIL_PASSWORD}`);
 
-    const transporter = await nodemailer.createTransport({
-      host: "smtpout.secureserver.net",
-      port: 587,
-      secure: false,
+    // const transporter = await nodemailer.createTransport({
+    //   host: "smtpout.secureserver.net",
+    //   port: 587,
+    //   secure: false,
+    //   auth: {
+    //     user: process.env.SUPPORT_EMAIL,
+    //     pass: process.env.EMAIL_PASSWORD,
+    //   },
+    //   tls: {
+    //     rejectUnauthorized: false,
+    //   },
+    //   socketTimeout: 60000,
+    //   connectionTimeout: 60000,
+    // });
+    const transporter = nodemailer.createTransport({
+      service: "gmail",
       auth: {
         user: process.env.SUPPORT_EMAIL,
         pass: process.env.EMAIL_PASSWORD,
       },
-      tls: {
-        rejectUnauthorized: false,
-      },
-      socketTimeout: 60000,
-      connectionTimeout: 60000,
     });
 
     const info = await transporter.sendMail({
