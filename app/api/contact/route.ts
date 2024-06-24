@@ -15,9 +15,9 @@ export async function POST(req: Request) {
     const message = _.get(data, "message", "Some message");
 
     const transporter = nodemailer.createTransport({
-      host: "smtpout.secureserver.net",
-      port: 465,
-      secure: false,
+      host: "smtp.office365.com",
+      port: 587,
+      secure: true,
       auth: {
         user: process.env.SUPPORT_EMAIL,
         pass: process.env.EMAIL_PASSWORD,
