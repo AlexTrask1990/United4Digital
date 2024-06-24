@@ -3,17 +3,17 @@ import nodemailer from "nodemailer";
 import * as _ from "lodash";
 
 export async function POST(req: Request) {
+  const data = await req.json();
+
+  const firstName = _.get(data, "firstName", "Jane");
+  const lastName = _.get(data, "lastName", "Doe");
+  const email = _.get(data, "email", "jane@gmail.com");
+  const phoneNumber = _.get(data, "phoneNumber", "");
+  const company = _.get(data, "company", "Some company");
+  const subject = _.get(data, "subject", "Some subject");
+  const message = _.get(data, "message", "Some message");
+
   try {
-    const data = await req.json();
-
-    const firstName = _.get(data, "firstName", "Jane");
-    const lastName = _.get(data, "lastName", "Doe");
-    const email = _.get(data, "email", "jane@gmail.com");
-    const phoneNumber = _.get(data, "phoneNumber", "");
-    const company = _.get(data, "company", "Some company");
-    const subject = _.get(data, "subject", "Some subject");
-    const message = _.get(data, "message", "Some message");
-
     const transporter = nodemailer.createTransport({
       host: "smtpout.secureserver.net",
       port: 465,
@@ -22,11 +22,6 @@ export async function POST(req: Request) {
         user: process.env.SUPPORT_EMAIL,
         pass: process.env.EMAIL_PASSWORD,
       },
-      tls: {
-        rejectUnauthorized: false,
-      },
-      socketTimeout: 60000,
-      connectionTimeout: 60000,
     });
 
     const info = await transporter.sendMail({
@@ -48,14 +43,10 @@ export async function POST(req: Request) {
         </div>
       `,
     });
-
     console.log(info, "info email");
     return NextResponse.json({ info: info });
   } catch (error) {
     console.error("Send mail Error:", error);
-    return NextResponse.json(
-      { error: "Failed to send mail." },
-      { status: 500 }
-    );
+    throw new Error("Failed to send mail.");
   }
 }
