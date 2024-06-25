@@ -3,10 +3,9 @@ title: "Demand-Side Platform"
 coverImage: "/glossary/Demand-Side Platform.jpeg"
 ogImage:
   url: "/glossary/Demand-Side Platform.jpeg"
----
+:-------------------:
 
 ## Demand-side platform (DSP)
-:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:
 A Demand-Side Platform (DSP) is a crucial tool in the world of programmatic advertising, providing a software solution for advertisers to purchase digital ad inventory. This technology streamlines the process, allowing advertisers to efficiently expand their reach, connect with their target audience, and optimize their campaigns in real-time.
 
 #### What Are Demand-Side Platforms?
