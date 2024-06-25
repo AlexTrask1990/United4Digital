@@ -30,24 +30,37 @@ Full-Service DSPs: Ideal for advertisers lacking the resources to manage campaig
 As programmatic advertising evolves, specialist DSPs have emerged to support specific types of ad buying:
 
 Mobile DSPs: Focus on handling mobile inventory, connecting with mobile ad exchanges to serve ads on mobile apps and devices.
+
 Video DSPs: Specialize in video ads, offering advanced targeting and a wide range of video inventory to engage users effectively.
+
 CTV DSPs: Cater to Connected TV (CTV) devices, enabling advertisers to target viewers on streaming platforms with various ad formats.
-Benefits of Demand-Side Platforms
+
+#### Benefits of Demand-Side Platforms
 DSPs offer several universal benefits, including:
+
 Efficient Workflow: Simplifies the ad-buying process by consolidating it into a single platform, eliminating the need for multiple negotiations and contracts.
+
 Lower Costs: Automates ad buying, saving time and money, and optimizes budget allocation.
+
 Expanded Reach: Access to multiple ad exchanges through one interface, providing diverse ad inventory.
+
 Sophisticated Targeting: Allows advertisers to create custom targeting criteria for their ads.
+
 Powerful Data and Optimization: In-depth analytics and reporting dashboards enable real-time campaign adjustments.
+
 Total Control: Fine-tune various settings, such as ad timing and frequency caps, to maximize campaign results.
 
 ##### The Programmatic Advertising Ecosystem
 Programmatic advertising automates the buying and selling of digital ad space in real-time. This ecosystem includes DSPs, SSPs, ad exchanges, ad servers, and Data Management Platforms (DMPs), each playing a specific role in connecting advertisers with valuable impressions.
 
 Real-Time Bidding (RTB): DSPs bid for ad impressions automatically in the time it takes for a webpage to load.
+
 Programmatic Direct: A non-auction model where advertisers buy ad space directly from publishers for a fixed time, ensuring guaranteed impressions.
+
 DSPs and Ad Networks: While ad networks aggregate and match ad space with advertiser needs, DSPs provide a more automated, scalable solution.
+
 DSPs and DMPs: DMPs store and analyze audience data, feeding this information to DSPs to serve relevant ads.
+
 DSPs and Ad Servers: Ad servers store and manage digital ads, working with DSPs to connect advertisers to the programmatic ecosystem.
 
 ##### Choosing the Right Demand-Side Platform
