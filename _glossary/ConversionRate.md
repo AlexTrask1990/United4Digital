@@ -3,7 +3,7 @@ title: "Conversion Rate"
 coverImage: "/glossary/Conversion Rate.jpeg"
 ogImage:
   url: "/glossary/Conversion Rate.jpeg"
-:-----------------------------------------------------------------------------------------------:
+---
 
 ## Conversion Rate (CVR)
 
