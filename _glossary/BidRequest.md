@@ -6,7 +6,6 @@ ogImage:
 ---
 
 ## Bid Request
-:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:
 
 ### What is a Bid Request?
 A bid request is a piece of code used in the digital advertising ecosystem to sell display ads and inventory details. It allows ads to be tailored to visitors, enabling multiple advertisers to utilize the same ad space on a publisher’s platform.
