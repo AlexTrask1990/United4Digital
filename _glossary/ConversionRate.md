@@ -35,7 +35,7 @@ Despite seeming straightforward, conversion rates can be misleading. Conversions
 
 Measuring the wrong metrics can also lead to inaccuracies. Ensure the numerator and denominator in your fraction align correctly to avoid comparing dissimilar data, like comparing total new customers to the number of leads when new customers might come from various sources.
 
-#####vConversion Rate Benchmarks
+##### Conversion Rate Benchmarks
 
 Average conversion rates vary significantly across industries, business models, product types, and devices. Lower-cost consumer goods often see higher conversion rates, while high-value goods and B2B sectors typically experience lower rates due to complex decision-making processes.
 
