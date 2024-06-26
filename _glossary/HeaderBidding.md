@@ -1,8 +1,8 @@
 ---
-title: "Header Bidding"
-coverImage: "/glossary/Header Bidding.jpeg"
+title: "HeaderBidding"
+coverImage: "/glossary/HeaderBidding.jpeg"
 ogImage:
-  url: "/glossaryHeader Bidding.jpeg"
+  url: "/glossaryHeaderBidding.jpeg"
 ---
 
 ## Header Bidding
