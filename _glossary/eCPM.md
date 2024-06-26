@@ -2,7 +2,7 @@
 title: "eCPM"
 coverImage: "/glossary/eCPM.jpeg"
 ogImage:
-  url: "/glossaryeCPM.jpeg"
+  url: "/glossary/eCPM.jpeg"
 ---
 
 ## eCPM (Effective Cost Per Mille)
