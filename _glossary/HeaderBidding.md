@@ -2,7 +2,7 @@
 title: "HeaderBidding"
 coverImage: "/glossary/HeaderBidding.jpeg"
 ogImage:
-  url: "/glossaryHeaderBidding.jpeg"
+  url: "/glossary/HeaderBidding.jpeg"
 ---
 
 ## Header Bidding
