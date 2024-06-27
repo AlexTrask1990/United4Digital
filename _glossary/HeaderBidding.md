@@ -6,8 +6,11 @@ ogImage:
 ---
 
 ## Header Bidding
+
 ### Header Bidding: Maximizing Ad Revenue in Real-Time
-##### What is Header Bidding?
+
+#### What is Header Bidding?
+
 Header bidding, also known as advanced bidding or pre-bidding, is a programmatic advertising approach where publishers auction their ad inventory to multiple ad exchanges simultaneously. This method ensures that publishers get the highest possible price for their ad spaces by allowing multiple ad exchanges to bid in real-time.
 
 For instance, consider a sports website that needs to sell its ad space. Traditionally, this would involve manually selling premium spots to a few ad networks. With header bidding, the website can auction its ad space to multiple networks, increasing competition and, consequently, revenue.
@@ -24,7 +27,8 @@ Enhanced Advertiser Access: Advertisers gain first access to impression data, al
 ##### The Waterfall Programmatic Era
 
 Before header bidding, the waterfall method, also known as daisy chaining, was prevalent. In this method, ad inventory was offered sequentially to ad exchanges based on their historic yield. If the first exchange did not meet the floor price, the offer would move to the next, and so on.
-#### While straightforward, the waterfall method had inefficiencies:
+
+#### While straightforward, the waterfall method had inefficiencies
 
 Missed Opportunities: High-paying ad exchanges lower in the sequence might be overlooked.
 
@@ -33,15 +37,19 @@ Latency Issues: Sequential processing caused delays, slowing down webpage perfor
 Header bidding addresses these issues by enabling a simultaneous real-time auction, maximizing both yield and revenue.
 
 #### Header Bidding vs. Real-Time Bidding (RTB)
+
 Real-time bidding (RTB) is the process of buying and selling ads through auctions that occur as webpages or apps load. Header bidding is a specific method within RTB that involves multiple ad exchanges bidding simultaneously.
 
 #### How Does Header Bidding Work?
+
 When a user opens a webpage, an auction is triggered by a code called a wrapper in the website's header. This wrapper contacts various ad exchanges and demand partners to bid within milliseconds. These partners conduct their own internal auctions to submit their highest bids. The winning bid then connects the publisher's and advertiser's ad servers, displaying the ad to the user.
 
 ##### In-App Bidding
+
 In-app bidding is the equivalent of header bidding for mobile applications. It allows for the programmatic buying and selling of ad space within apps through real-time auctions.
 
 ##### Header Bidding vs. Open Bidding
+
 Open bidding, like Google’s version, is a server-side auction process, unlike the client-side process in traditional header bidding. Open bidding simplifies implementation as it doesn't require complex code on the publisher's side and creates a unified auction involving ad exchanges, supply-side platforms (SSPs), and demand partners.
 
 ##### Challenges and Considerations
