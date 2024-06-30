@@ -5,11 +5,14 @@ interface IProps {
   fill?: string;
   className?: string;
 }
-export const LinkedIn: FC<IProps> = ({ fill = "white", className = "hover:bg-gray-50" }) => {
+export const LinkedIn: FC<IProps> = ({
+  fill = "white",
+  className = "hover:bg-gray-50",
+}) => {
   return (
     <Link
       aria-label="LinkedIn link"
-      href="https://www.linkedin.com/in/iryna-omelnytska-1152242bb/recent-activity/all/"
+      href="https://www.linkedin.com/company/united4digital/"
       className={`p-2 rounded-full transition-colors ${className}`}
     >
       <svg
