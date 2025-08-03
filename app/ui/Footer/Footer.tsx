@@ -116,7 +116,7 @@ export default function Footer() {
             />
           </Link>
           <span className="pl-[10px]">
-            71-75 Shelton Street Covent Garden, London, England, WC2H 9JQ
+            71-75 Shelton Street Covent Garden, London, England, WC2H 9JQ 
           </span>
         </div>
       </div>
