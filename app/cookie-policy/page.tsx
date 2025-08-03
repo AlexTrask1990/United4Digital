@@ -17,7 +17,7 @@ export default function CookiePolicy() {
       <Paragraph className="pt-4">
         Welcome to <BoldText className="underline">united4digital.com</BoldText>
         , an online platform operated by{" "}
-        <BoldText>United4Digital Ltd.</BoldText>, headquartered in 71-75 Shelton Street Covent Garden, London, England, WC2H 9JQ (hereinafter referred to as
+        <BoldText>United4Digital Ltd.</BoldText>, headquartered in 71-75 Shelton Street Covent Garden, London, England, WC2H 9JQ (hereinafter referred to as 
         <BoldText>&quot;We&quot;</BoldText> or the{" "}
         <BoldText>&quot;Company&quot;</BoldText>).
       </Paragraph>
