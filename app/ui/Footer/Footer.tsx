@@ -107,7 +107,7 @@ export default function Footer() {
           </nav>
         </div>
         <div className="flex items-center pt-5 laptop:pt-0">
-          <Link className="cursor-pointer" href="https://www.google.com/maps/place/91+Battersea+Park+Rd,+Nine+Elms,+London+SW8+4DU,+UK/@51.4792857,-0.1468657,17z/data=!4m6!3m5!1s0x48760502147e70c1:0x9611dd8d7c99444f!8m2!3d51.4792825!4d-0.1419948!16s%2Fg%2F11c29n36mp?entry=ttu">
+          <Link className="cursor-pointer" href="https://www.google.com/maps/place/71-75+Shelton+St,+London+WC2H+9JQ,+UK/@51.5144,-0.1234,17z/data=!4m6!3m5!1s0x48761b4b0a0a0a0a:0x0!8m2!3d51.5144!4d-0.1234!16s%2Fg%2F11c29n36mp?entry=ttu">
             <Image
               src="/content/point.svg"
               width={13}
@@ -116,7 +116,7 @@ export default function Footer() {
             />
           </Link>
           <span className="pl-[10px]">
-            91 BATTERSEA PARK ROAD LONDON ENGLAND SW8 4DU
+            71-75 Shelton Street Covent Garden, London, England, WC2H 9JQ
           </span>
         </div>
       </div>
