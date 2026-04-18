@@ -1,0 +1,214 @@
+{
+  "contact_address": "71-75 Shelton Street Covent Garden, London, England, WC2H 9JQ",
+  "contact_email": "support@united4digital.com",
+  "version": "1.0",
+  "ext": {
+    "last_updated": "18-April-2026"
+  },
+  "sellers": [
+    {
+      "seller_id": "785427",
+      "name": "Take1Ads",
+      "domain": "https://united4digital.com/",
+      "seller_type": "INTERMEDIARY"
+    },
+    {
+      "seller_id": "785428",
+      "name": "United4digital",
+      "domain": "https://united4digital.com/",
+      "seller_type": "INTERMEDIARY"
+    },
+    {
+      "seller_id": "785429",
+      "name": "Adluminex",
+      "domain": "https://united4digital.com/",
+      "seller_type": "INTERMEDIARY"
+    },
+    {
+      "seller_id": "785870",
+      "name": "Afront",
+      "domain": "https://united4digital.com/",
+      "seller_type": "INTERMEDIARY"
+    },
+    {
+      "seller_id": "786059",
+      "name": "BidderAds",
+      "domain": "https://united4digital.com/",
+      "seller_type": "INTERMEDIARY"
+    },
+    {
+      "seller_id": "785868",
+      "name": "Bidfuse",
+      "domain": "https://united4digital.com/",
+      "seller_type": "INTERMEDIARY"
+    },
+    {
+      "seller_id": "785874",
+      "name": "DoByAi",
+      "domain": "https://united4digital.com/",
+      "seller_type": "INTERMEDIARY"
+    },
+    {
+      "seller_id": "785878",
+      "name": "MonetizeMatrix",
+      "domain": "https://united4digital.com/",
+      "seller_type": "INTERMEDIARY"
+    },
+    {
+      "seller_id": "786060",
+      "name": "Screencore",
+      "domain": "https://united4digital.com/",
+      "seller_type": "INTERMEDIARY"
+    },
+    {
+      "seller_id": "786058",
+      "name": "SilverPush",
+      "domain": "https://united4digital.com/",
+      "seller_type": "INTERMEDIARY"
+    },
+    {
+      "seller_id": "787728",
+      "name": "Cuedart CTV",
+      "domain": "https://united4digital.com/",
+      "seller_type": "INTERMEDIARY"
+    },
+    {
+      "seller_id": "",
+      "name": "LeapMob",
+      "domain": "https://united4digital.com/",
+      "seller_type": "INTERMEDIARY"
+    },
+    {
+      "seller_id": "787950",
+      "name": "AcunX",
+      "domain": "https://united4digital.com/",
+      "seller_type": "INTERMEDIARY"
+    },
+    {
+      "seller_id": "",
+      "name": "Voise Tech Ltd",
+      "domain": "https://united4digital.com/",
+      "seller_type": "INTERMEDIARY"
+    },
+    {
+      "seller_id": "786667",
+      "name": "TVIQ",
+      "domain": "https://united4digital.com/",
+      "seller_type": "INTERMEDIARY"
+    },
+    {
+      "seller_id": "786541",
+      "name": "NasRev",
+      "domain": "https://united4digital.com/",
+      "seller_type": "INTERMEDIARY"
+    },
+    {
+      "seller_id": "787599",
+      "name": "Faber Broadcasts",
+      "domain": "https://united4digital.com/",
+      "seller_type": "INTERMEDIARY"
+    },
+    {
+      "seller_id": "",
+      "name": "Lemma",
+      "domain": "https://united4digital.com/",
+      "seller_type": "INTERMEDIARY"
+    },
+    {
+      "seller_id": "",
+      "name": "Vosaco",
+      "domain": "https://united4digital.com/",
+      "seller_type": "INTERMEDIARY"
+    },
+    {
+      "seller_id": "",
+      "name": "Adcrew",
+      "domain": "https://united4digital.com/",
+      "seller_type": "INTERMEDIARY"
+    },
+    {
+      "seller_id": "787639",
+      "name": "Cubera",
+      "domain": "https://united4digital.com/",
+      "seller_type": "INTERMEDIARY"
+    },
+    {
+      "seller_id": "787951",
+      "name": "Performena",
+      "domain": "https://united4digital.com/",
+      "seller_type": "INTERMEDIARY"
+    },
+    {
+      "seller_id": "787952",
+      "name": "Blackrock Streaming",
+      "domain": "https://united4digital.com/",
+      "seller_type": "INTERMEDIARY"
+    },
+    {
+      "seller_id": "787953",
+      "name": "Streamvision",
+      "domain": "https://united4digital.com/",
+      "seller_type": "INTERMEDIARY"
+    },
+    {
+      "seller_id": "787955",
+      "name": "Oveeo",
+      "domain": "https://united4digital.com/",
+      "seller_type": "INTERMEDIARY"
+    },
+    {
+      "seller_id": "787956",
+      "name": "MaticWay",
+      "domain": "https://united4digital.com/",
+      "seller_type": "PUBLISHER"
+    },
+    {
+      "seller_id": "787957",
+      "name": "Solaris Endeavors",
+      "domain": "https://united4digital.com/",
+      "seller_type": "INTERMEDIARY"
+    },
+    {
+      "seller_id": "787728",
+      "name": "House of Pubs",
+      "domain": "https://united4digital.com/",
+      "seller_type": "INTERMEDIARY"
+    },
+    {
+      "seller_id": "787958",
+      "name": "Sootix",
+      "domain": "https://united4digital.com/",
+      "seller_type": "PUBLISHER"
+    },
+    {
+      "seller_id": "",
+      "name": "ThirdPresence",
+      "domain": "https://united4digital.com/",
+      "seller_type": "INTERMEDIARY"
+    },
+    {
+      "seller_id": "787959",
+      "name": "Adviddo",
+      "domain": "https://united4digital.com/",
+      "seller_type": "PUBLISHER"
+    },
+    {
+      "seller_id": "787565",
+      "name": "Adextra",
+      "domain": "https://united4digital.com/",
+      "seller_type": "PUBLISHER"
+    },
+    {
+      "seller_id": "787960",
+      "name": "Hax Media Partners",
+      "domain": "https://united4digital.com/",
+      "seller_type": "INTERMEDIARY"
+    },
+    {
+      "seller_id": "787961",
+      "name": "Admile",
+      "domain": "https://united4digital.com/",
+      "seller_type": "INTERMEDIARY"
+    }
+  ]
+}
