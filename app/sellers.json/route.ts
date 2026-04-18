@@ -30,7 +30,10 @@ export const GET = async () => {
     const data = fromSheet
       ? await getSellersPayloadFromSheet()
       : await getSellersPayloadFromFile();
-    const response = NextResponse.json(data);
+    const response = new NextResponse(JSON.stringify(data, null, 2), {
+      status: 200,
+      headers: { "Content-Type": "application/json; charset=utf-8" },
+    });
     if (process.env.NODE_ENV === "development") {
       response.headers.set(
         "X-Sellers-Source",
