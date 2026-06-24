@@ -6,6 +6,11 @@
   scroll-behavior: smooth;
 }
 
+html.deferred-hash-scroll {
+  overflow: hidden;
+  visibility: hidden;
+}
+
 :root {
   margin: 0;
   padding: 0;
