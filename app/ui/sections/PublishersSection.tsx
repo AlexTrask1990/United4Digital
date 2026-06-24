@@ -17,7 +17,7 @@ export default function PublishersSection() {
 
         <Container>
           <div className="flex laptop:justify-between items-center flex-col laptop:flex-row-reverse">
-            <div className="order-2 laptop:order-1">
+            <div className="order-2 laptop:order-1 min-h-[520px] overflow-hidden">
               <MonetizationGraph />
             </div>
 
@@ -35,7 +35,7 @@ export default function PublishersSection() {
           </div>
 
           <div className="flex laptop:justify-between flex-col items-center laptop:flex-row-reverse pt-28">
-            <div className="order-2 laptop:order-2 max-w-[1010px] max-h-[490px]">
+            <div className="order-2 laptop:order-2 max-h-[490px] min-h-[490px] max-w-[1010px] overflow-hidden">
               <IntegrationProcessGraph />
             </div>
 
@@ -57,7 +57,7 @@ export default function PublishersSection() {
           </div>
 
           <div className="flex laptop:justify-between items-center flex-col laptop:flex-row-reverse pt-28">
-            <div className="order-2 laptop:order-1">
+            <div className="order-2 laptop:order-1 min-h-[490px] overflow-hidden">
               <Image width={0} height={0} src="/content/comprehensive.gif" alt="Comprehensive image" className="w-auto h-auto"/>
             </div>
 
@@ -80,7 +80,7 @@ export default function PublishersSection() {
           </div>
 
           <div className="flex laptop:justify-end items-center flex-col laptop:flex-row-reverse pt-28">
-            <div className="order-2 max-w-[730px] max-h-[460px]">
+            <div className="order-2 max-h-[460px] min-h-[460px] max-w-[730px] overflow-hidden">
               <PublishersLottie />
             </div>
 

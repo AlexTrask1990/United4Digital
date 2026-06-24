@@ -14,7 +14,7 @@ export default function ContactUsSection() {
         <Container>
           <div className="flex flex-col items-center widescreen:items-start pt-14 laptop:pt-0 widescreen:flex-row justify-between">
             <Form />
-            <div className="pt-4 laptop:pt-0 tablet:ml-4 order-1 widescreen:order-2 pb-4 widescreen:pb-0">
+            <div className="order-1 widescreen:order-2 min-h-[720px] w-full max-w-[1280px] overflow-hidden pb-4 pt-4 widescreen:pb-0 laptop:pt-0 tablet:ml-4 widescreen:pt-0">
               <ContactUsLottie />
             </div>
           </div>
