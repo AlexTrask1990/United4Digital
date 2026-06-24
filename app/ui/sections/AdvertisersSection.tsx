@@ -56,7 +56,7 @@ export default function AdvertisersSection() {
                 target CPM preferences.
               </p>
             </div>
-            <div className="order-2 min-h-[320px] max-w-[894px] overflow-hidden laptop:min-h-[540px]">
+            <div className="order-2 min-h-[360px] max-w-[894px] overflow-hidden laptop:min-h-[620px]">
               <Image
                 src="/content/advertisers.gif"
                 width={0}
@@ -90,7 +90,7 @@ export default function AdvertisersSection() {
         </Container>
         <Container>
           <div className="flex laptop:justify-between flex-col items-center laptop:flex-row-reverse pt-28">
-            <div className="order-1 min-h-[360px] max-w-[1280px] overflow-hidden laptop:min-h-[880px]">
+            <div className="order-1 min-h-[400px] max-w-[1280px] overflow-hidden laptop:min-h-[960px]">
               <AdvertLottie />
             </div>
 

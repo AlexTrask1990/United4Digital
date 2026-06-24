@@ -17,7 +17,7 @@ export default function PublishersSection() {
 
         <Container>
           <div className="flex laptop:justify-between items-center flex-col laptop:flex-row-reverse">
-            <div className="order-2 min-h-[320px] max-w-[1040px] overflow-hidden laptop:order-1 laptop:min-h-[640px]">
+            <div className="order-2 min-h-[360px] max-w-[1040px] overflow-hidden laptop:order-1 laptop:min-h-[720px]">
               <MonetizationGraph />
             </div>
 
@@ -35,7 +35,7 @@ export default function PublishersSection() {
           </div>
 
           <div className="flex laptop:justify-between flex-col items-center laptop:flex-row-reverse pt-28">
-            <div className="order-2 min-h-[320px] max-w-[1010px] max-h-[490px] overflow-hidden laptop:order-2 laptop:min-h-[610px]">
+            <div className="order-2 min-h-[360px] max-w-[1010px] max-h-[490px] overflow-hidden laptop:order-2 laptop:min-h-[690px]">
               <IntegrationProcessGraph />
             </div>
 
@@ -57,7 +57,7 @@ export default function PublishersSection() {
           </div>
 
           <div className="flex laptop:justify-between items-center flex-col laptop:flex-row-reverse pt-28">
-            <div className="order-2 min-h-[320px] max-w-[1010px] overflow-hidden laptop:order-1 laptop:min-h-[610px]">
+            <div className="order-2 min-h-[360px] max-w-[1010px] overflow-hidden laptop:order-1 laptop:min-h-[690px]">
               <Image width={0} height={0} src="/content/comprehensive.gif" alt="Comprehensive image" className="w-auto h-auto"/>
             </div>
 
@@ -80,7 +80,7 @@ export default function PublishersSection() {
           </div>
 
           <div className="flex laptop:justify-end items-center flex-col laptop:flex-row-reverse pt-28">
-            <div className="order-2 min-h-[320px] max-w-[730px] max-h-[460px] overflow-hidden laptop:min-h-[580px]">
+            <div className="order-2 min-h-[360px] max-w-[730px] max-h-[460px] overflow-hidden laptop:min-h-[660px]">
               <PublishersLottie />
             </div>
 

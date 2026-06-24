@@ -30,7 +30,7 @@ export default function MediaSection() {
                 targets.
               </p>
             </div>
-            <div className="w-auto h-auto min-h-[320px] max-w-[730px] max-h-[406px] overflow-hidden laptop:min-h-[450px]">
+            <div className="w-auto h-auto min-h-[360px] max-w-[730px] max-h-[406px] overflow-hidden laptop:min-h-[520px]">
               <Image
                 src="/content/your-adv.gif"
                 width={0}
@@ -64,7 +64,7 @@ export default function MediaSection() {
             />
           </div>
           <div className="flex laptop:justify-end items-center flex-col laptop:flex-row-reverse pt-28">
-            <div className="order-1 min-h-[320px] max-w-[737px] overflow-hidden laptop:order-2 laptop:min-h-[580px]">
+            <div className="order-1 min-h-[360px] max-w-[737px] overflow-hidden laptop:order-2 laptop:min-h-[660px]">
               <SocialMediaLottie />
             </div>
 
