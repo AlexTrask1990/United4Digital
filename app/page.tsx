@@ -1,6 +1,5 @@
 import Footer from "@/app/ui/Footer/Footer";
 import Header from "@/app/ui/Header/Header";
-import { ContactHashScroll } from "@/app/ui/ContactHashScroll/ContactHashScroll";
 import PresentSection from "@/app/ui/sections/PresentSection";
 import AboutUsSection from "@/app/ui/sections/AboutUsSection";
 import PublishersSection from "@/app/ui/sections/PublishersSection";
@@ -12,7 +11,6 @@ export default function Home() {
   return (
     <>
       <Header />
-      <ContactHashScroll />
       <main className="flex-grow overflow-x-hidden">
         <PresentSection />
         <AboutUsSection />

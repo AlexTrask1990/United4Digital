@@ -6,7 +6,7 @@ import ContactUsLottie from "./components/LottieImage/ContactUsLottie";
 
 export default function ContactUsSection() {
   return (
-    <SectionWrapper id="contact-us" className="scroll-mt-86 bg-base-100">
+    <SectionWrapper id="contact-us" className="bg-base-100">
       <div className="w-11/12">
         <Container>
           <SectionHeading text={"Contact us"} />
@@ -14,7 +14,7 @@ export default function ContactUsSection() {
         <Container>
           <div className="flex flex-col items-center widescreen:items-start pt-14 laptop:pt-0 widescreen:flex-row justify-between">
             <Form />
-            <div className="order-1 widescreen:order-2 min-h-[720px] w-full max-w-[1280px] overflow-hidden pb-4 pt-4 widescreen:pb-0 laptop:pt-0 tablet:ml-4 widescreen:pt-0">
+            <div className="pt-4 laptop:pt-0 tablet:ml-4 order-1 widescreen:order-2 pb-4 widescreen:pb-0">
               <ContactUsLottie />
             </div>
           </div>
