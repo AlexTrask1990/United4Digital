@@ -6,7 +6,7 @@ import ContactUsLottie from "./components/LottieImage/ContactUsLottie";
 
 export default function ContactUsSection() {
   return (
-    <SectionWrapper id="contact-us" className="bg-base-100">
+    <SectionWrapper id="contact-us" className="scroll-mt-86 bg-base-100">
       <div className="w-11/12">
         <Container>
           <SectionHeading text={"Contact us"} />

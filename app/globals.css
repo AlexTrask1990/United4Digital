@@ -6,6 +6,10 @@
   scroll-behavior: smooth;
 }
 
+html {
+  scroll-padding-top: 5.375rem;
+}
+
 :root {
   margin: 0;
   padding: 0;
