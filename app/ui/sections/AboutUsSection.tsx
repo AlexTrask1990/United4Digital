@@ -61,7 +61,9 @@ export default function AboutUsSection() {
                 revenue potential.
               </p>
             </div>
-            <AboutUsLottie />
+            <div className="min-h-[200px] max-w-[730px] overflow-hidden laptop:min-h-[460px]">
+              <AboutUsLottie />
+            </div>
           </div>
         </Container>
         <Container>
