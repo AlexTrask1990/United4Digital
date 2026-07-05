@@ -2,8 +2,6 @@ import type { Metadata } from "next";
 import { openSans } from "@/app/ui/fonts";
 import { GoogleTagManager } from "@next/third-parties/google";
 import { Analytics } from "@vercel/analytics/react";
-import { DeferredHashScroll } from "@/app/ui/DeferredHashScroll/DeferredHashScroll";
-import { captureDeferredHashScript } from "@/app/lib/deferredHashScroll";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -48,15 +46,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <meta name="keywords" content="United4Digital, United 4 Digital, Digital Marketing Solutions, advertisement, online advertisement, publishers, advertisers, data transparency, online advertisement, online ads, video ads" />
-        <script dangerouslySetInnerHTML={{ __html: captureDeferredHashScript }} />
+      <meta name="keywords" content="United4Digital, United 4 Digital, Digital Marketing Solutions, advertisement, online advertisement, publishers, advertisers, data transparency, online advertisement, online ads, video ads" />
       </head>
       <GoogleTagManager gtmId={process.env.GOOGLE_TAG_MANAGER_ID || ""} />
       <Analytics />
       <body
         className={`${openSans.variable} flex flex-col min-h-screen antialiased`}
       >
-        <DeferredHashScroll />
         {children}
       </body>
     </html>
