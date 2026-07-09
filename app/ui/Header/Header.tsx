@@ -1,8 +1,7 @@
 import Logo from "@/app/ui/Header/Logo/Logo";
 import { NavLinks } from "@/app/ui/Header/NavLinks/NavLinks";
 import { DropdownMenu } from "./DropdownMenu/DropdownMenu";
-import { externalLinks } from "@/app/lib/links";
-import { United4GamesBrandLogo } from "@/app/ui/BrandLogo/BrandLogo";
+import { United4GamesHeaderLink } from "@/app/ui/Header/United4GamesHeaderLink";
 
 export default function Header() {
   return (
@@ -10,15 +9,7 @@ export default function Header() {
       <nav className="navbar justify-between px-10 w-11/12 laptop:px-0 items-center container mx-auto text-white">
         <div className="flex shrink-0 items-end gap-4 laptop:gap-6">
           <Logo />
-          <a
-            href={externalLinks.united4Games}
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="United4Games home"
-            className="hidden transition-opacity hover:opacity-85 laptop:block"
-          >
-            <United4GamesBrandLogo />
-          </a>
+          <United4GamesHeaderLink />
         </div>
         <NavLinks />
         <DropdownMenu />

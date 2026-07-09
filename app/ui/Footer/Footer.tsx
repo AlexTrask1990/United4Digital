@@ -18,19 +18,19 @@ export default function Footer() {
               className="w-[125px] h-[84px]"
             />
           </aside>
-          <nav className="flex flex-col gap-1 tablet:gap-4 tablet:flex-row px-4 py-[20px] tablet:py-0 justify-between text-base max-w-[499px] tablet:h-[60px]">
-            <div className="flex flex-col justify-between">
+          <nav className="relative z-10 flex flex-col gap-4 px-4 py-[20px] text-base max-w-[499px] tablet:flex-row tablet:items-start tablet:gap-8 tablet:py-0">
+            <div className="flex flex-col gap-2">
               <Link
                 aria-label="About us link"
                 href={`/#about-us`}
-                className="hover:font-bold tablet:w-[90px]"
+                className="cursor-pointer transition-opacity hover:font-bold hover:opacity-90 tablet:w-[90px]"
               >
                 About us
               </Link>
               <Link
                 aria-label="Publishers link"
                 href={`/#publishers`}
-                className="hover:font-bold tablet:w-[90px]"
+                className="cursor-pointer transition-opacity hover:font-bold hover:opacity-90 tablet:w-[90px]"
               >
                 Publishers
               </Link>
@@ -39,26 +39,33 @@ export default function Footer() {
               <Link
                 aria-label="Media buying and user acquisition link"
                 href={`/#media-buying-and-user-acquisition`}
-                className="flex flex-row tablet:flex-col tablet:justify-between tablet:h-[60px] hover:font-bold tablet:w-[130px]"
+                className="flex cursor-pointer flex-row transition-opacity hover:font-bold hover:opacity-90 tablet:w-[130px] tablet:flex-col tablet:gap-2"
               >
                 <span>Media Buying &</span>
-                {"  "} <span>User Acquisition</span>
+                <span>User Acquisition</span>
               </Link>
             </div>
-            <div className="flex flex-col justify-between">
+            <div className="flex flex-col gap-2">
               <Link
                 aria-label="Advertisers link"
                 href={`/#advertisers`}
-                className="hover:font-bold tablet:w-[90px]"
+                className="cursor-pointer transition-opacity hover:font-bold hover:opacity-90 tablet:w-[90px]"
               >
                 Advertisers
               </Link>
               <Link
                 aria-label="Glossary link"
                 href={`/glossary`}
-                className="hover:font-bold tablet:w-[90px]"
+                className="cursor-pointer transition-opacity hover:font-bold hover:opacity-90 tablet:w-[90px]"
               >
                 Glossary
+              </Link>
+              <Link
+                aria-label="Careers link"
+                href="/careers"
+                className="cursor-pointer transition-opacity hover:font-bold hover:opacity-90 tablet:w-[90px]"
+              >
+                Careers
               </Link>
             </div>
           </nav>

@@ -13,6 +13,7 @@ import { LinkedIn } from "@/app/ui/Social";
 import { sendMail } from "@/app/lib/actions";
 import Loading from "@/app/ui/Loading/Loading";
 import SuccessMessage from "@/app/ui/SuccessMessage/SuccessMessage";
+import { ContactBrandClickers } from "@/app/ui/sections/components/Form/ContactBrandClickers";
 
 export default function Form() {
   const [isLoading, setIsLoading] = useState<boolean>(false);
@@ -53,6 +54,7 @@ export default function Form() {
   return (
     <div className="relative w-full bg-white rounded-md p-4 laptop:p-4 max-w-[792px] order-2 widescreen:order-1">
       <form onSubmit={handleSubmit(onSubmit)}>
+        <ContactBrandClickers />
         <div className="laptop:flex laptop:justify-between">
           {/* *** First Name *** */}
           <label className="form-control relative w-full laptop:min-w-[300px] tablet:mr-4">

@@ -17,6 +17,10 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       url: `${process.env.BASE_URL}/glossary`,
       lastModified: new Date(),
     },
+    {
+      url: `${process.env.BASE_URL}/careers`,
+      lastModified: new Date(),
+    },
     ...glossaryEntries,
   ];
 }
