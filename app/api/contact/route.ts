@@ -14,17 +14,15 @@ export async function POST(req: Request) {
     const subject = _.get(data, "subject", "Some subject");
     const message = _.get(data, "message", "Some message");
 
-    console.log(`SUPPORT_EMAIL: ${process.env.SUPPORT_EMAIL}`);
-    console.log(`EMAIL_PASSWORD: ${process.env.EMAIL_PASSWORD}`);
-
-    const transporter = await nodemailer.createTransport({
-      host: "smtpout.secureserver.net",
-      port: 465,
-      secure: true,
+    const transporter = nodemailer.createTransport({
+      host: "smtp.office365.com",
+      port: 587,
+      secure: false,
       auth: {
         user: process.env.SUPPORT_EMAIL,
         pass: process.env.EMAIL_PASSWORD,
       },
+      requireTLS: true,
       tls: {
         rejectUnauthorized: false,
       },
