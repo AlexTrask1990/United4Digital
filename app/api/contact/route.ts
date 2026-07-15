@@ -30,11 +30,18 @@ export async function POST(req: Request) {
       connectionTimeout: 60000,
     });
 
+    const customerName = `${firstName} ${lastName}`.trim();
+    const senderAddress =
+      process.env.SUPPORT_EMAIL ?? "support@united4digital.com";
+
     const info = await transporter.sendMail({
       from: {
-        name: `${firstName} ${lastName}`,
-        address: email,
+        name: customerName
+          ? `United4Digital Contact: ${customerName}`
+          : "United4Digital Contact Form",
+        address: senderAddress,
       },
+      replyTo: email,
       to: "support@united4digital.com",
       subject: subject,
       text: message,
