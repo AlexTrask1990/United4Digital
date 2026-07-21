@@ -1,11 +1,10 @@
 "use client";
 
-import { useState, useRef } from "react";
+import { useState } from "react";
 import { useForm, SubmitHandler, Controller } from "react-hook-form";
 import PhoneInputWithCountry from "react-phone-number-input/react-hook-form";
 import "react-phone-number-input/style.css";
 import { yupResolver } from "@hookform/resolvers/yup";
-import ReCAPTCHA from "react-google-recaptcha";
 import { CFormKeys, IFormData } from "@/app/types/definitions";
 import { schema } from "@/app/types/modelValidations";
 import { Button } from "@/app/ui/Button/Button";
@@ -14,11 +13,15 @@ import { sendMail } from "@/app/lib/actions";
 import Loading from "@/app/ui/Loading/Loading";
 import SuccessMessage from "@/app/ui/SuccessMessage/SuccessMessage";
 import { ContactBrandClickers } from "@/app/ui/sections/components/Form/ContactBrandClickers";
+import {
+  hasRecaptchaSiteKey,
+  RecaptchaField,
+} from "@/app/ui/sections/components/Form/RecaptchaField";
 
 export default function Form() {
   const [isLoading, setIsLoading] = useState<boolean>(false);
   const [success, setSuccess] = useState<boolean>(false);
-  const recaptchaRef = useRef<ReCAPTCHA>(null);
+  const [recaptchaKey, setRecaptchaKey] = useState(0);
   const {
     register,
     handleSubmit,
@@ -44,7 +47,9 @@ export default function Form() {
         recaptcha: "",
         message: "",
       });
-      recaptchaRef.current?.reset();
+      if (hasRecaptchaSiteKey) {
+        setRecaptchaKey((currentKey) => currentKey + 1);
+      }
     } else {
       setSuccess(false);
       setIsLoading(false);
@@ -214,10 +219,9 @@ export default function Form() {
           name={CFormKeys.RECAPTCHA}
           control={control}
           rules={{ required: false }}
-          render={({ field: { onChange, value }, fieldState: { error } }) => (
-            <ReCAPTCHA
-              ref={recaptchaRef}
-              sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY || ""}
+          render={({ field: { onChange } }) => (
+            <RecaptchaField
+              key={recaptchaKey}
               onChange={onChange}
               className="pt-6"
             />
