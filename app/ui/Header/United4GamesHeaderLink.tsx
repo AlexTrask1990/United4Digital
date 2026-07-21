@@ -32,7 +32,7 @@ export const United4GamesHeaderLink = () => {
       target="_blank"
       rel="noopener noreferrer"
       aria-label="United4Games home — game studio"
-      className="group relative hidden shrink-0 transition-opacity hover:opacity-85 laptop:inline-flex"
+      className="group relative inline-flex shrink-0 transition-opacity hover:opacity-85"
       variants={linkVariants}
       initial="rest"
       whileHover={prefersReducedMotion ? undefined : "hover"}
