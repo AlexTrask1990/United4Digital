@@ -1,10 +1,11 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { useForm, SubmitHandler, Controller } from "react-hook-form";
 import PhoneInputWithCountry from "react-phone-number-input/react-hook-form";
 import "react-phone-number-input/style.css";
 import { yupResolver } from "@hookform/resolvers/yup";
+import ReCAPTCHA from "react-google-recaptcha";
 import { CFormKeys, IFormData } from "@/app/types/definitions";
 import { schema } from "@/app/types/modelValidations";
 import { Button } from "@/app/ui/Button/Button";
@@ -13,15 +14,11 @@ import { sendMail } from "@/app/lib/actions";
 import Loading from "@/app/ui/Loading/Loading";
 import SuccessMessage from "@/app/ui/SuccessMessage/SuccessMessage";
 import { ContactBrandClickers } from "@/app/ui/sections/components/Form/ContactBrandClickers";
-import {
-  hasRecaptchaSiteKey,
-  RecaptchaField,
-} from "@/app/ui/sections/components/Form/RecaptchaField";
 
 export default function Form() {
   const [isLoading, setIsLoading] = useState<boolean>(false);
   const [success, setSuccess] = useState<boolean>(false);
-  const [recaptchaKey, setRecaptchaKey] = useState(0);
+  const recaptchaRef = useRef<ReCAPTCHA>(null);
   const {
     register,
     handleSubmit,
@@ -47,9 +44,7 @@ export default function Form() {
         recaptcha: "",
         message: "",
       });
-      if (hasRecaptchaSiteKey) {
-        setRecaptchaKey((currentKey) => currentKey + 1);
-      }
+      recaptchaRef.current?.reset();
     } else {
       setSuccess(false);
       setIsLoading(false);
@@ -220,8 +215,10 @@ export default function Form() {
           control={control}
           rules={{ required: false }}
           render={({ field: { onChange } }) => (
-            <RecaptchaField
-              key={recaptchaKey}
+            <ReCAPTCHA
+              ref={recaptchaRef}
+              sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY || ""}
+              hl="en"
               onChange={onChange}
               className="pt-6"
             />

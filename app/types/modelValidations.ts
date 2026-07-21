@@ -1,5 +1,4 @@
 import * as yup from "yup";
-import { isRecaptchaEnabled } from "@/app/lib/recaptcha";
 import { CFormKeys } from "./definitions";
 
 export const schema = yup
@@ -20,10 +19,8 @@ export const schema = yup
     [CFormKeys.COMPANY]: yup.string().max(50, "Company name must be at most 50 characters."),
     [CFormKeys.SUBJECT]: yup.string().max(50, "Subject must be at most 50 characters."),
     [CFormKeys.MESSAGE]: yup.string().max(500, "Message must be at most 500 characters."),
-    [CFormKeys.RECAPTCHA]: isRecaptchaEnabled
-      ? yup
-          .string()
-          .required("You must confirm that you are not a robot")
-      : yup.string().optional(),
+    [CFormKeys.RECAPTCHA]: yup
+      .string()
+      .required("You must confirm that you are not a robot"),
   })
   .required();
