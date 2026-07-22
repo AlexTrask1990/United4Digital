@@ -7,16 +7,6 @@ const easeOutExpo: [number, number, number, number] = [0.22, 1, 0.36, 1];
 
 const brandCards = [
   {
-    id: "u4g",
-    label: "United4Games",
-    tag: "Game studio",
-    letters: [
-      { char: "U", className: "text-primary" },
-      { char: "4", className: "text-secondary" },
-      { char: "G", className: "text-[#6ec1e4]" },
-    ],
-  },
-  {
     id: "u4d",
     label: "United4Digital",
     tag: "agency",
@@ -24,6 +14,16 @@ const brandCards = [
       { char: "U", className: "text-primary" },
       { char: "4", className: "text-secondary" },
       { char: "D", className: "text-primary" },
+    ],
+  },
+  {
+    id: "u4g",
+    label: "United4Games",
+    tag: "Game studio",
+    letters: [
+      { char: "U", className: "text-primary" },
+      { char: "4", className: "text-secondary" },
+      { char: "G", className: "text-[#6ec1e4]" },
     ],
   },
 ];
@@ -38,7 +38,7 @@ const cardBounceVariants = {
 
 export const ContactBrandClickers = () => {
   const prefersReducedMotion = useReducedMotion();
-  const [activeCard, setActiveCard] = useState("u4g");
+  const [activeCard, setActiveCard] = useState("u4d");
 
   return (
     <fieldset className="form-control mb-2">
