@@ -10,6 +10,6 @@ onetag.com, 8df76ed1d09d55e, RESELLER
 #Adplify
 Adplify.ai, 789710, DIRECT
 
-# Lemma
+#Lemma
 lemmatechnologies.com, xxxx, DIRECT
 INVENTORYPARTNERDOMAIN=lemmatechnologies.com
