@@ -12,4 +12,4 @@ Adplify.ai, 789710, DIRECT
 
 #Lemma
 lemmatechnologies.com, xxxx, DIRECT
-INVENTORYPARTNERDOMAIN=lemmatechnologies.com
+INVENTORYPARTNERDOMAIN=lemmatechnologies.com 
