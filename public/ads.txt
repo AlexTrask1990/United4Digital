@@ -2,14 +2,3 @@
 buff.game, 240807510, DIRECT
 improvedigital.com, 2361, DIRECT
 smartyads.com, 300231, DIRECT, fd2bde0ff2e62c5d
-
-#Arcanflow
-arcaneflow.com, 15010, DIRECT
-onetag.com, 8df76ed1d09d55e, RESELLER
-
-#Adplify
-Adplify.ai, 789710, DIRECT
-
-#Lemma
-lemmatechnologies.com, xxxx, DIRECT
-INVENTORYPARTNERDOMAIN=lemmatechnologies.com 
