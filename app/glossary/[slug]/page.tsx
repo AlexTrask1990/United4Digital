@@ -51,7 +51,9 @@ export function generateMetadata({ params }: Params): Metadata {
   const general = getGlossaryBySlug(params.slug);
 
   if (!general) {
-    return notFound();
+    return {
+      title: "Glossary",
+    };
   }
 
   const title = `${general.title}`;
@@ -63,7 +65,7 @@ export function generateMetadata({ params }: Params): Metadata {
     title,
     openGraph: {
       title,
-      images: [general.ogImage.url],
+      images: general.ogImage?.url ? [general.ogImage.url] : undefined,
     },
   };
 }
