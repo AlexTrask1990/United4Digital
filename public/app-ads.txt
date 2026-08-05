@@ -1,4 +1,0 @@
-#Buff Games
-buff.game, 240807510, DIRECT
-improvedigital.com, 2361, DIRECT
-smartyads.com, 300231, DIRECT, fd2bde0ff2e62c5d

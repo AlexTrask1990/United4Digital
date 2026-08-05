@@ -6,7 +6,13 @@ export default function robots(): MetadataRoute.Robots {
       {
         userAgent: "*",
         allow: "/",
-        disallow: ["/cookie-policy", "/terms", "/privacy-policy"],
+        disallow: [
+          "/cookie-policy",
+          "/terms",
+          "/privacy-policy",
+          "/admin/",
+          "/api/admin/",
+        ],
       },
     ],
     sitemap: `${process.env.BASE_URL}/sitemap.xml`,
