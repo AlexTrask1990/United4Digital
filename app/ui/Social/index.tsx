@@ -12,7 +12,7 @@ export const LinkedIn: FC<IProps> = ({
   return (
     <Link
       aria-label="LinkedIn link"
-      href="https://www.linkedin.com/company/united4digital/"
+      href="https://www.linkedin.com/company/united4digital/posts/?feedView=all"
       className={`p-2 rounded-full transition-colors ${className}`}
     >
       <svg
