@@ -44,11 +44,18 @@ const CareerListingCard = ({ listing }: { listing: CareerListing }) => {
         {listing.sections.map((section) => (
           <section key={section.title}>
             <h3 className="text-xl font-bold text-primary">{section.title}</h3>
-            <ul className="mt-3 list-disc space-y-2 pl-5 text-base leading-relaxed text-gray-50">
-              {section.items.map((item) => (
-                <li key={item}>{item}</li>
-              ))}
-            </ul>
+            {section.description && (
+              <p className="mt-3 text-base leading-relaxed text-gray-50">
+                {section.description}
+              </p>
+            )}
+            {section.items.length > 0 && (
+              <ul className="mt-3 list-disc space-y-2 pl-5 text-base leading-relaxed text-gray-50">
+                {section.items.map((item) => (
+                  <li key={item}>{item}</li>
+                ))}
+              </ul>
+            )}
           </section>
         ))}
       </div>
